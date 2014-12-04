@@ -1,0 +1,44 @@
+{
+  "name": "bassplate",
+  "version": "0.0.1",
+  "description": "Boilerplate for Basscss with Gulp, Rework, and Browserify",
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "devDependencies": {
+    "basscss-base": "latest",
+    "basscss-color-basic": "latest",
+    "basscss-grid": "latest",
+    "basscss-positions": "latest",
+    "basscss-table-object": "latest",
+    "basscss-ui-utilities": "latest",
+    "basscss-utilities": "latest",
+    "gulp": "^3.8.10",
+    "gulp-basswork": "0.0.9",
+    "gulp-browserify": "^0.5.0",
+    "gulp-minify-css": "^0.3.11",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^1.0.1",
+    "gulp-webserver": "^0.8.7",
+    "flex-object": "0.0.4",
+    "geomicons-open": "0.0.6"
+  },
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jxnblk/bassplate.git"
+  },
+  "keywords": [
+    "CSS",
+    "OOCSS",
+    "Basscss",
+    "Gulp",
+    "Boilerplate",
+    "Browserify"
+  ],
+  "bugs": {
+    "url": "https://github.com/jxnblk/bassplate/issues"
+  },
+  "homepage": "https://github.com/jxnblk/bassplate"
+}

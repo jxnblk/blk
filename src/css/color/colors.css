@@ -1,0 +1,7 @@
+
+.bright-blue { color: var(--bright-blue) }
+.aqua { color: var(--aqua) }
+
+.bg-bright-blue { background-color: var(--bright-blue) }
+.bg-aqua { background-color: var(--aqua) }
+
