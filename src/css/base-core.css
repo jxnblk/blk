@@ -1,5 +1,5 @@
 /*
-    B L K
+    B L K  Core
 
 */
 
@@ -7,15 +7,10 @@
 /* Basscss Modules */
 @import 'basscss-base';
 @import 'basscss-utilities';
-@import 'basscss-positions';
-@import 'basscss-ui-utilities';
-@import 'basscss-grid';
-@import 'flex-object';
 @import 'basscss-color-basic';
-
-
-@import './utility/icons';
+/*
 @import './color/colors';
+*/
 
 
 /* Custom media queries */
@@ -48,10 +43,8 @@
   --space-3: 2rem;
   --space-4: 4rem;
 
-  /* Grid container max-width */
   --container-width: 72em;
 
-  /* Colors */
   --blue: #0076df;
   --red: #f95c10;
   --green: #00cf26;

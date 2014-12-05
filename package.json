@@ -20,7 +20,10 @@
     "gulp-uglify": "^1.0.1",
     "gulp-webserver": "^0.8.7",
     "flex-object": "0.0.4",
-    "geomicons-open": "0.0.6"
+    "geomicons-open": "0.0.6",
+    "css-statistics": "0.0.21",
+    "gulp-css-statistics": "0.0.1",
+    "gulp-compile-handlebars": "^0.4.3"
   },
   "scripts": {
     "start": "gulp"
