@@ -11,11 +11,15 @@
 @import 'basscss-ui-utilities';
 @import 'basscss-grid';
 @import 'flex-object';
-@import 'basscss-color-basic';
 
-
+@import './base/typography';
 @import './utility/icons';
+
+@import './color/base';
 @import './color/colors';
+@import './color/borders';
+@import './color/button-blue';
+@import './color/button-blue-outline';
 
 
 /* Custom media queries */
@@ -27,7 +31,7 @@
 /* Variables */
 :root {
 
-  --font-family: 'San Francisco Display', 'Avenir Next', 'Helvetica Neue', Helvetica, sans-serif;
+  --font-family: 'xSan Francisco Display', 'xAvenir Next', 'Helvetica Neue', Helvetica, sans-serif;
   --line-height: 1.5;
   --heading-font-family: var(--font-family);
   --heading-font-weight: bold;
