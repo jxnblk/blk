@@ -23,7 +23,9 @@
     "geomicons-open": "0.0.6",
     "css-statistics": "0.0.21",
     "gulp-css-statistics": "0.0.1",
-    "gulp-compile-handlebars": "^0.4.3"
+    "gulp-compile-handlebars": "^0.4.3",
+    "gulp-s3": "^0.3.0",
+    "gulp-gzip": "0.0.8"
   },
   "scripts": {
     "start": "gulp"
