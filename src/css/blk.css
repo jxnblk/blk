@@ -31,7 +31,7 @@
 /* Variables */
 :root {
 
-  --font-family: 'xSan Francisco Display', 'xAvenir Next', 'Helvetica Neue', Helvetica, sans-serif;
+  --font-family: 'San Francisco Display', 'xAvenir Next', 'Helvetica Neue', Helvetica, sans-serif;
   --line-height: 1.5;
   --heading-font-family: var(--font-family);
   --heading-font-weight: bold;

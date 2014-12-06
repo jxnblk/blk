@@ -33,7 +33,7 @@ svg {
 }
 
 body {
-  font-family: 'xSan Francisco Display', 'xAvenir Next', 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'San Francisco Display', 'xAvenir Next', 'Helvetica Neue', Helvetica, sans-serif;
   line-height: 1.5;
   font-size: 100%;
 }
@@ -44,7 +44,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'xSan Francisco Display', 'xAvenir Next', 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'San Francisco Display', 'xAvenir Next', 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: bold;
   line-height: 1.25;
   margin-top: 1em;
