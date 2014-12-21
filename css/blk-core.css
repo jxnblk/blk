@@ -613,20 +613,16 @@ a:hover {
   text-decoration: underline;
 }
 
-/*
-pre, code {
-  background-color: var(--lighter-gray);
-  border-radius: var(--border-radius);
+pre,
+code {
+  background-color: #f3f9f9;
+  border-radius: 3px;
 }
-*/
 
 hr {
   border: 0;
   border-bottom-style: solid;
   border-bottom-width: 2px;
-  /*
-  border-bottom-color: var(--border-color);
-  */
 }
 
 .bright-blue {
@@ -787,6 +783,10 @@ hr {
 
 .circle {
   border-radius: 50%;
+}
+
+.border-light-gray {
+  border-color: #c3c9c9;
 }
 
 .button-blue {

@@ -23,6 +23,7 @@
 @import './color/borders';
 @import './color/button-blue';
 @import './color/button-blue-outline';
+@import './color/highlight';
 
 
 /* Custom media queries */

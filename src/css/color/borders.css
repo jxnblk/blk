@@ -31,3 +31,5 @@
 .rounded { border-radius: var(--border-radius) }
 .circle  { border-radius: 50% }
 
+.border-light-gray { border-color: var(--light-gray) }
+
