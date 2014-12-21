@@ -26,7 +26,8 @@
     "gulp-compile-handlebars": "^0.4.3",
     "gulp-s3": "^0.3.0",
     "gulp-gzip": "0.0.8",
-    "humanize-plus": "^1.5.0"
+    "humanize-plus": "^1.5.0",
+    "basscss-utility-headings": "0.0.4"
   },
   "scripts": {
     "start": "gulp"
