@@ -3,8 +3,6 @@ var gulp = require('gulp');
 var rename = require('gulp-rename');
 var basswork = require('gulp-basswork');
 var minifyCss = require('gulp-minify-css');
-var browserify = require('gulp-browserify');
-var uglify = require('gulp-uglify');
 var webserver = require('gulp-webserver');
 var cssstats = require('gulp-css-statistics');
 var handlebars = require('gulp-compile-handlebars');
@@ -13,7 +11,7 @@ var gzip = require('gulp-gzip');
 var Humanize = require('humanize-plus');
 
 gulp.task('css', function() {
-  gulp.src('./src/css/*.css')
+  gulp.src('./src/*.css')
     .pipe(basswork())
     .pipe(gulp.dest('./css'))
     .pipe(minifyCss())
@@ -22,14 +20,6 @@ gulp.task('css', function() {
     .pipe(gzip())
     .pipe(rename({ extname: '.gz' }))
     .pipe(gulp.dest('./css'));
-});
-
-gulp.task('js', function() {
-  gulp.src('./src/js/app.js')
-    .pipe(browserify())
-    .pipe(uglify())
-    .pipe(rename({ extname: '.min.js' }))
-    .pipe(gulp.dest('./js'));
 });
 
 gulp.task('stats', function() {
@@ -69,7 +59,7 @@ gulp.task('s3', function() {
     }));
 });
 
-gulp.task('default', ['css', 'js', 'serve', 'stats', 'build'], function() {
-  gulp.watch(['./src/**/*', './views/**/*'], ['css', 'js', 'stats', 'build']);
+gulp.task('default', ['css', 'serve', 'stats', 'build'], function() {
+  gulp.watch(['./src/**/*', './views/**/*'], ['css', 'stats', 'build']);
 });
 
