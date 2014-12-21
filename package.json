@@ -1,6 +1,6 @@
 {
   "name": "bassplate",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Boilerplate for Basscss with Gulp, Rework, and Browserify",
   "author": "Brent Jackson",
   "license": "MIT",
