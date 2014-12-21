@@ -8,6 +8,7 @@
 @import 'basscss-base';
 @import 'basscss-utilities';
 
+@import './utility/fonts';
 @import './color/base';
 @import './color/colors';
 @import './color/borders';

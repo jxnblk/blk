@@ -567,6 +567,14 @@ td {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+.sf-display {
+  font-family: 'San Francisco Display', 'Avenir Next', Helvetica, sans-serif;
+}
+
+.sf-text {
+  font-family: 'San Francisco Text', 'Avenir Next', Helvetica, sans-serif;
+}
+
 body {
   color: #304650;
   background-color: white;
@@ -597,12 +605,23 @@ hr {
   */
 }
 
-/*
-.bright-blue { color: var(--bright-blue) }
-.aqua { color: var(--aqua) }
+.bright-blue {
+  color: #0096ff;
+}
 
-.bg-bright-blue { background-color: var(--bright-blue) }
-.bg-aqua { background-color: var(--aqua) }
+.aqua {
+  color: #40bfc0;
+}
+
+.bg-bright-blue {
+  background-color: #0096ff;
+}
+
+.bg-aqua {
+  background-color: #40bfc0;
+}
+
+/*
 */
 
 .dark-gray {

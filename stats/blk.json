@@ -1,5 +1,5 @@
 {
-  "size": 17579,
+  "size": 17577,
   "selectors": [
     {
       "selector": "body",
@@ -4186,7 +4186,7 @@
       {
         "type": "declaration",
         "property": "font-family",
-        "value": "'xSan Francisco Display', 'xAvenir Next', 'Helvetica Neue', Helvetica, sans-serif",
+        "value": "'San Francisco Display', 'xAvenir Next', 'Helvetica Neue', Helvetica, sans-serif",
         "position": {
           "start": {
             "line": 36,
@@ -4194,7 +4194,7 @@
           },
           "end": {
             "line": 36,
-            "column": 97
+            "column": 96
           }
         }
       },
@@ -4231,7 +4231,7 @@
       {
         "type": "declaration",
         "property": "font-family",
-        "value": "'xSan Francisco Display', 'xAvenir Next', 'Helvetica Neue', Helvetica, sans-serif",
+        "value": "'San Francisco Display', 'xAvenir Next', 'Helvetica Neue', Helvetica, sans-serif",
         "position": {
           "start": {
             "line": 47,
@@ -4239,7 +4239,7 @@
           },
           "end": {
             "line": 47,
-            "column": 97
+            "column": 96
           }
         }
       },
@@ -12258,7 +12258,7 @@
         {
           "type": "declaration",
           "property": "font-family",
-          "value": "'xSan Francisco Display', 'xAvenir Next', 'Helvetica Neue', Helvetica, sans-serif",
+          "value": "'San Francisco Display', 'xAvenir Next', 'Helvetica Neue', Helvetica, sans-serif",
           "position": {
             "start": {
               "line": 36,
@@ -12266,7 +12266,7 @@
             },
             "end": {
               "line": 36,
-              "column": 97
+              "column": 96
             }
           }
         },
@@ -12326,7 +12326,7 @@
         {
           "type": "declaration",
           "property": "font-family",
-          "value": "'xSan Francisco Display', 'xAvenir Next', 'Helvetica Neue', Helvetica, sans-serif",
+          "value": "'San Francisco Display', 'xAvenir Next', 'Helvetica Neue', Helvetica, sans-serif",
           "position": {
             "start": {
               "line": 47,
@@ -12334,7 +12334,7 @@
             },
             "end": {
               "line": 47,
-              "column": 97
+              "column": 96
             }
           }
         },

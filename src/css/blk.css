@@ -13,6 +13,7 @@
 @import 'flex-object';
 
 @import './base/typography';
+@import './utility/fonts';
 @import './utility/icons';
 
 @import './color/base';
@@ -31,7 +32,7 @@
 /* Variables */
 :root {
 
-  --font-family: 'San Francisco Display', 'xAvenir Next', 'Helvetica Neue', Helvetica, sans-serif;
+  --font-family: 'Avenir Next', 'Helvetica Neue', Helvetica, sans-serif;
   --line-height: 1.5;
   --heading-font-family: var(--font-family);
   --heading-font-weight: bold;

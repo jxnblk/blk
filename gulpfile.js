@@ -20,7 +20,7 @@ gulp.task('css', function() {
     .pipe(rename({ extname: '.min.css' }))
     .pipe(gulp.dest('./css'))
     .pipe(gzip())
-    .pipe(rename({ extname: '.min.css.gz' }))
+    .pipe(rename({ extname: '.gz' }))
     .pipe(gulp.dest('./css'));
 });
 
