@@ -1173,6 +1173,14 @@ td {
   font-family: Georgia, serif;
 }
 
+pre {
+  padding: 1rem;
+}
+
+p code {
+  font-size: 87.5%;
+}
+
 svg {
   fill: currentcolor;
 }
@@ -1207,7 +1215,7 @@ a:hover {
 
 pre,
 code {
-  background-color: #f3f9f9;
+  background-color: rgba(0, 0, 0, .0625);
   border-radius: 3px;
 }
 
@@ -1342,31 +1350,31 @@ hr {
 
 .border {
   border-style: solid;
-  border-width: 1px;
+  border-width: 2px;
 }
 
 .border-top {
   border-top-style: solid;
-  border-top-width: 1px;
+  border-top-width: 2px;
 }
 
 .border-right {
   border-right-style: solid;
-  border-right-width: 1px;
+  border-right-width: 2px;
 }
 
 .border-bottom {
   border-bottom-style: solid;
-  border-bottom-width: 1px;
+  border-bottom-width: 2px;
 }
 
 .border-left {
   border-left-style: solid;
-  border-left-width: 1px;
+  border-left-width: 2px;
 }
 
 .border-2 {
-  border-width: 2px;
+  border-width: 4px;
 }
 
 .rounded {

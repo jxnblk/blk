@@ -84,7 +84,7 @@
 
   --border-color: var(--light-gray);
   --border-color: currentcolor;
-  --border-width: 1px;
+  --border-width: 2px;
   --border-radius: 3px;
 
 }

@@ -1,3 +1,6 @@
 
 .serif { font-family: Georgia, serif }
 
+pre { padding: var(--space-2) }
+p code { font-size: 87.5% }
+

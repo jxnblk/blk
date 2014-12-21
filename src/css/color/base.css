@@ -14,13 +14,13 @@ a {
   }
 
 pre, code {
-  background-color: var(--lighter-gray);
+  background-color: var(--darken-1);
   border-radius: var(--border-radius);
 }
 
 hr {
   border: 0;
   border-bottom-style: solid;
-  border-bottom-width: calc(2 * var(--border-width));
+  border-bottom-width: var(--border-width);
 }
 
