@@ -55,18 +55,19 @@
   --blue: #0076df;
   --red: #f95c10;
   --green: #00cf26;
-  --green: #50cf77;
+  --green: #30cf77;
   --yellow: #ffc300;
 
   --dark-gray: #304650;
   --mid-gray: #667680;
-  --light-gray: #c3c9c9;
+  --light-gray: #d3d9d9;
   --lighter-gray: #f3f9f9;
 
   --bright-blue: #0096ff;
   --aqua: #40bfc0;
 
     --blue: var(--bright-blue);
+    --blue: #0089ff;
 
   --darken-1: rgba(#000,.0625);
   --darken-2: rgba(#000,.125);
