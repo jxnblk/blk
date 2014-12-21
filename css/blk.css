@@ -45,7 +45,7 @@ h4,
 h5,
 h6 {
   font-family: 'Avenir Next', 'Helvetica Neue', Helvetica, sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 1.25;
   margin-top: 1em;
   margin-bottom: .5em;
@@ -187,7 +187,7 @@ textarea {
 
 button,
 .button {
-  font-weight: bold;
+  font-weight: 600;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -218,7 +218,7 @@ table {
 
 th {
   text-align: left;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 th,
@@ -296,7 +296,7 @@ td {
 }
 
 .bold {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .regular {

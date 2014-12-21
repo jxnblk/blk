@@ -35,7 +35,7 @@
   --font-family: 'Avenir Next', 'Helvetica Neue', Helvetica, sans-serif;
   --line-height: 1.5;
   --heading-font-family: var(--font-family);
-  --heading-font-weight: bold;
+  --heading-font-weight: 600;
   --heading-line-height: 1.25;
   --monospace-font-family: 'Source Code Pro', Consolas, monospace;
 
@@ -46,7 +46,7 @@
   --h5: 1rem;
   --h6: .875rem;
 
-  --bold-font-weight: bold;
+  --bold-font-weight: 600;
 
   --space-1: .5rem;
   --space-2: 1rem;
