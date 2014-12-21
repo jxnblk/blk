@@ -13,6 +13,7 @@
 @import 'flex-object';
 
 @import './base/typography';
+@import './base/svg';
 @import './utility/fonts';
 @import './utility/icons';
 

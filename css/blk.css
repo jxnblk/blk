@@ -1151,6 +1151,10 @@ td {
   font-family: Georgia, serif;
 }
 
+svg {
+  fill: currentcolor;
+}
+
 .sf-display {
   font-family: 'San Francisco Display', 'Avenir Next', Helvetica, sans-serif;
 }
