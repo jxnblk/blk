@@ -1,6 +1,6 @@
 {
   "name": "bassplate",
-  "version": "0.0.2",
+  "version": "0.0.6",
   "description": "Boilerplate for Basscss with Gulp, Rework, and Browserify",
   "author": "Brent Jackson",
   "license": "MIT",
@@ -21,11 +21,13 @@
     "gulp-webserver": "^0.8.7",
     "flex-object": "0.0.4",
     "geomicons-open": "0.0.6",
-    "css-statistics": "0.0.21",
-    "gulp-css-statistics": "0.0.1",
+    "cssstats": "latest",
+    "gulp-css-statistics": "latest",
     "gulp-compile-handlebars": "^0.4.3",
     "gulp-s3": "^0.3.0",
-    "gulp-gzip": "0.0.8"
+    "gulp-gzip": "0.0.8",
+    "humanize-plus": "^1.5.0",
+    "basscss-utility-headings": "0.0.4"
   },
   "scripts": {
     "start": "gulp"

@@ -7,10 +7,13 @@
 /* Basscss Modules */
 @import 'basscss-base';
 @import 'basscss-utilities';
-@import 'basscss-color-basic';
-/*
+
+@import './utility/fonts';
+@import './color/base';
 @import './color/colors';
-*/
+@import './color/borders';
+@import './color/button-blue';
+@import './color/button-blue-outline';
 
 
 /* Custom media queries */

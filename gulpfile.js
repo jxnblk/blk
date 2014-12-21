@@ -10,6 +10,7 @@ var cssstats = require('gulp-css-statistics');
 var handlebars = require('gulp-compile-handlebars');
 var s3 = require('gulp-s3');
 var gzip = require('gulp-gzip');
+var Humanize = require('humanize-plus');
 
 gulp.task('css', function() {
   gulp.src('./src/css/*.css')
@@ -19,7 +20,7 @@ gulp.task('css', function() {
     .pipe(rename({ extname: '.min.css' }))
     .pipe(gulp.dest('./css'))
     .pipe(gzip())
-    .pipe(rename({ extname: '.min.css.gz' }))
+    .pipe(rename({ extname: '.gz' }))
     .pipe(gulp.dest('./css'));
 });
 
@@ -39,10 +40,16 @@ gulp.task('stats', function() {
 
 gulp.task('build', function() {
   var model = {};
-  model.blk = require('./stats/base.json');
-  model.blkCore = require('./stats/base-core.json');
+  model.blk = require('./stats/blk.json');
+  model.blkCore = require('./stats/blk-core.json');
   gulp.src('./views/**/*.hbs')
-    .pipe(handlebars(model))
+    .pipe(handlebars(model, {
+      helpers: {
+        filesize: function(string) {
+          return Humanize.fileSize(string);
+        }
+      }
+    }))
     .pipe(rename({ extname: '.html' }))
     .pipe(gulp.dest('.'));
 });
