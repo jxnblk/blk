@@ -1143,42 +1143,6 @@ td {
   }
 }
 
-.h0 {
-  font-size: 2.5rem;
-}
-
-.h00 {
-  font-size: 3rem;
-}
-
-@media (min-width: 40em) {
-  .h0vw {
-    font-size: 6vw;
-  }
-
-  .h00vw {
-    font-size: 8vw;
-  }
-}
-
-@media (min-width: 40em) {
-  .sm-h0 {
-    font-size: 4rem;
-  }
-}
-
-@media (min-width: 52em) {
-  .md-h0 {
-    font-size: 5rem;
-  }
-}
-
-@media (min-width: 64em) {
-  .lg-h0 {
-    font-size: 6rem;
-  }
-}
-
 .serif {
   font-family: Georgia, serif;
 }
