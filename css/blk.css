@@ -609,6 +609,10 @@ td {
   .h0-responsive {
     font-size: 6vw;
   }
+
+  .h1-responsive {
+    font-size: 4vw;
+  }
 }
 
 @media (min-width: 96em) {
@@ -618,6 +622,10 @@ td {
 
   .h0-responsive {
     font-size: 5.76rem;
+  }
+
+  .h1-responsive {
+    font-size: 3.84rem;
   }
 }
 
