@@ -1169,10 +1169,6 @@ td {
   }
 }
 
-.serif {
-  font-family: Georgia, serif;
-}
-
 pre {
   padding: 1rem;
 }
@@ -1191,6 +1187,10 @@ svg {
 
 .sf-text {
   font-family: 'San Francisco Text', 'Avenir Next', Helvetica, sans-serif;
+}
+
+.georgia {
+  font-family: Georgia, serif;
 }
 
 .icon {

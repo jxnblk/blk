@@ -599,6 +599,10 @@ td {
   font-family: 'San Francisco Text', 'Avenir Next', Helvetica, sans-serif;
 }
 
+.georgia {
+  font-family: Georgia, serif;
+}
+
 body {
   color: #304650;
   background-color: white;
