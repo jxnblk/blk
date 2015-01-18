@@ -25,7 +25,26 @@
     "gulp-s3": "^0.3.0",
     "gulp-gzip": "0.0.8",
     "humanize-plus": "^1.5.0",
-    "basscss-utility-headings": "0.0.5"
+    "basscss-utility-headings": "0.0.5",
+    "basscss-base-reset": "0.0.3",
+    "basscss-base-buttons": "^1.0.2",
+    "basscss-base-tables": "^0.1.1",
+    "basscss-base-typography": "0.0.3",
+    "basscss-base-forms": "^1.0.4",
+    "basscss-color-base": "0.0.2",
+    "basscss-color-borders": "0.0.2",
+    "basscss-color-forms": "0.0.2",
+    "basscss-color-buttons": "^0.1.1",
+    "basscss-color-tables": "^0.1.0",
+    "basscss-color-forms-dark": "0.0.2",
+    "basscss-colors": "0.0.2",
+    "basscss-defaults": "^0.2.0",
+    "basscss-ui-utility-button-sizes": "^1.0.0",
+    "basscss-utility-layout": "0.0.2",
+    "basscss-utility-typography": "0.0.2",
+    "basscss-utility-responsive-states": "0.0.2",
+    "basscss-ui-utility-groups": "0.0.4",
+    "basscss-utility-white-space": "0.0.3"
   },
   "scripts": {
     "start": "gulp"

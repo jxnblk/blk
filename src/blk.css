@@ -5,13 +5,33 @@
 
 
 /* Basscss Modules */
-@import 'basscss-base';
-@import 'basscss-utilities';
-@import 'basscss-utility-headings';
+@import 'basscss-base-reset';
+@import 'basscss-base-typography';
+@import 'basscss-base-forms';
+@import 'basscss-base-buttons';
+@import 'basscss-base-tables';
+
+@import 'basscss-utility-layout';
+@import 'basscss-utility-typography';
+@import 'basscss-utility-white-space';
+@import 'basscss-utility-responsive-states';
 @import 'basscss-positions';
-@import 'basscss-ui-utilities';
+@import 'basscss-utility-headings';
+
+@import 'basscss-ui-utility-button-sizes';
+@import 'basscss-ui-utility-groups';
+
 @import 'basscss-grid';
 @import 'flex-object';
+
+@import 'basscss-color-base';
+@import 'basscss-color-forms';
+@import 'basscss-color-forms-dark';
+@import 'basscss-color-tables';
+@import 'basscss-color-buttons';
+@import 'basscss-colors';
+@import 'basscss-color-borders';
+
 
 @import './base/typography';
 @import './base/svg';
@@ -25,6 +45,7 @@
 @import './color/button-blue-outline';
 @import './color/highlight';
 
+@import 'basscss-defaults';
 
 /* Custom media queries */
 @custom-media --breakpoint-sm (min-width: 40em);
@@ -50,11 +71,15 @@
   --h6: .875rem;
 
   --bold-font-weight: 600;
+  --button-font-weight: 600;
+  --heading-font-weight: 600;
 
   --space-1: .5rem;
   --space-2: 1rem;
   --space-3: 2rem;
   --space-4: 4rem;
+
+  --button-font-size: .875rem;
 
   /* Grid container max-width */
   --container-width: 72em;
@@ -67,6 +92,7 @@
   --yellow: #ffc300;
 
   --dark-gray: #304650;
+    --dark-gray: #263c46;
   --mid-gray: #667680;
   --light-gray: #d3d9d9;
   --lighter-gray: #f3f9f9;
@@ -86,6 +112,25 @@
   --border-color: currentcolor;
   --border-width: 2px;
   --border-radius: 3px;
+
+  /* From Bassdock theme */
+  /*
+  --dark-gray: #445;
+    --dark-gray: #556;
+  --mid-gray: #868690;
+  --light-gray: #ccccd6;
+  --lighter-gray: #f6f6fc;
+  */
+
+  --blue: #00afef;
+  --green: #00ef60;
+  --yellow: #ffdf00;
+  --red: #ff6000;
+  --red: #f95c10;
+    --red: #f52; /* Plangular */
+  --red: #ff3030;
+  --dark-blue: #006faf;
+  --light-blue: rgba(var(--blue), .0625);
 
 }
 

@@ -11,11 +11,9 @@
 <body>
 
   <header class="px2 py4 blue bg-dark-gray">
-    <div class="container">
-      <hr>
-      <h1 class="h00 h00-responsive caps m0">Blk</h1>
-      <p class="h3 bold m0">A style guide</p>
-      <hr>
+    <div class="container sm-flex flex-center ">
+      <h1 class="h0 h0-responsive m0 flex-auto">Blk</h1>
+      <p class="h6 bold caps m0">A Style Guide</p>
     </div>
   </header>
 
@@ -45,49 +43,46 @@
     <h1 class="h2">Colors</h1>
     <hr>
     <div class="flex flex-wrap mxn2">
-      <div class="col-6 sm-col-4 md-col-3 lg-col-2 p2">
+      <div class="flex-auto col-6 lg-col-4 p2">
         <svg viewBox="0 0 32 32" width="256" height="256" class="dark-gray block" style="width:100%;height:auto">
           <rect width="32" height="32" fill="currentcolor"/>
         </svg>
       </div>
-      <div class="col-6 sm-col-4 md-col-3 lg-col-2 p2">
+      <div class="flex-auto col-6 lg-col-5 p2">
         <svg viewBox="0 0 32 32" width="256" height="256" class="blue block" style="width:100%;height:auto">
+          <rect width="32" height="32" fill="currentcolor"/>
+        </svg>
+      </div>
+      <div class="flex-auto lg-col-3"></div>
+      <div class="flex-auto col-2 p2">
+        <svg viewBox="0 0 32 32" width="256" height="256" class="green block" style="width:100%;height:auto">
+          <rect width="32" height="32" fill="currentcolor"/>
+        </svg>
+      </div>
+      <div class="flex-auto col-2 p2">
+        <svg viewBox="0 0 32 32" width="256" height="256" class="yellow block" style="width:100%;height:auto">
+          <rect width="32" height="32" fill="currentcolor"/>
+        </svg>
+      </div>
+      <div class="flex-auto col-2 p2">
+        <svg viewBox="0 0 32 32" width="256" height="256" class="red block" style="width:100%;height:auto">
           <rect width="32" height="32" fill="currentcolor"/>
         </svg>
       </div>
       <!--
       <div class="col-6 sm-col-4 md-col-3 lg-col-2 p2">
-        <svg viewBox="0 0 32 32" width="256" height="256" class="aqua block" style="width:100%;height:auto">
-          <rect width="32" height="32" fill="currentcolor"/>
-        </svg>
-      </div>
       -->
-      <div class="col-6 sm-col-4 md-col-3 lg-col-2 p2">
-        <svg viewBox="0 0 32 32" width="256" height="256" class="green block" style="width:100%;height:auto">
-          <rect width="32" height="32" fill="currentcolor"/>
-        </svg>
-      </div>
-      <div class="col-6 sm-col-4 md-col-3 lg-col-2 p2">
-        <svg viewBox="0 0 32 32" width="256" height="256" class="yellow block" style="width:100%;height:auto">
-          <rect width="32" height="32" fill="currentcolor"/>
-        </svg>
-      </div>
-      <div class="col-6 sm-col-4 md-col-3 lg-col-2 p2">
-        <svg viewBox="0 0 32 32" width="256" height="256" class="red block" style="width:100%;height:auto">
-          <rect width="32" height="32" fill="currentcolor"/>
-        </svg>
-      </div>
-      <div class="col-6 sm-col-4 md-col-3 lg-col-2 p2">
+      <div class="flex-auto col-2 p2">
         <svg viewBox="0 0 32 32" width="256" height="256" class="mid-gray block" style="width:100%;height:auto">
           <rect width="32" height="32" fill="currentcolor"/>
         </svg>
       </div>
-      <div class="col-6 sm-col-4 md-col-3 lg-col-2 p2">
+      <div class="flex-auto col-2 p2">
         <svg viewBox="0 0 32 32" width="256" height="256" class="light-gray block" style="width:100%;height:auto">
           <rect width="32" height="32" fill="currentcolor"/>
         </svg>
       </div>
-      <div class="col-6 sm-col-4 md-col-3 lg-col-2 p2">
+      <div class="flex-auto col-2 p2">
         <svg viewBox="0 0 32 32" width="256" height="256" class="lighter-gray block" style="width:100%;height:auto">
           <rect width="32" height="32" fill="currentcolor"/>
         </svg>
@@ -95,31 +90,38 @@
     </div>
   </section>
 
-  <section id="buttons" class="container px2 py3 blue">
+  <section id="buttons" class="container px2 py3">
     <h1 class="h2">Buttons</h1>
     <hr>
     <div class="flex flex-center flex-wrap mxn2">
-      <button class="h2 m2 button-blue">Blue</button>
-      <button class="h2 m2 button-blue-outline">Blue Outline</button>
-      <button class="h3 m2 button-blue">Blue</button>
-      <button class="h3 m2 button-blue-outline">Blue Outline</button>
-      <button class="m2 button-blue">Blue</button>
-      <button class="m2 button-blue-outline">Blue Outline</button>
+      <button class="h4 m2 button-big button-blue">Button</button>
+      <button class="m2 button-blue">Button</button>
+      <button class="m2 button-small button-blue">Button</button>
+      <button class="h4 m2 button-big button-blue-outline">Button</button>
+      <button class="m2 button-blue-outline">Button</button>
+      <button class="m2 button-small button-blue-outline">Button</button>
+    </div>
+    <div class="flex flex-center flex-wrap mxn2">
+      <button class="h4 m2 button-big button-light-gray">Button</button>
+      <button class="m2 button-light-gray">Button</button>
+      <button class="m2 button-small button-light-gray">Button</button>
+      <button class="h4 m2 button-big button-red">Button</button>
+      <button class="m2 button-red">Button</button>
+      <button class="m2 button-small button-red">Button</button>
     </div>
   </section>
 
   <section id="icons" class="container px2 py3">
-    <div class="p2 border border-2 blue">
-      <h1 class="h2 m0">Icons</h1>
-      <div class="h2 flex flex-wrap mxn2">
-        <svg class="js-geomicon icon m2" data-icon="heart"></svg>
-        <svg class="js-geomicon icon m2" data-icon="previous"></svg>
-        <svg class="js-geomicon icon m2" data-icon="play"></svg>
-        <svg class="js-geomicon icon m2" data-icon="pause"></svg>
-        <svg class="js-geomicon icon m2" data-icon="next"></svg>
-        <svg class="js-geomicon icon m2" data-icon="search"></svg>
-        <svg class="js-geomicon icon m2" data-icon="chevron-right"></svg>
-      </div>
+    <h1 class="h2 m0">Icons</h1>
+    <hr>
+    <div class="h1 h1-responsive flex flex-wrap mxn2">
+      <svg class="flex-auto js-geomicon icon m2" data-icon="heart"></svg>
+      <svg class="flex-auto js-geomicon icon m2" data-icon="previous"></svg>
+      <svg class="flex-auto js-geomicon icon m2" data-icon="play"></svg>
+      <svg class="flex-auto js-geomicon icon m2" data-icon="pause"></svg>
+      <svg class="flex-auto js-geomicon icon m2" data-icon="next"></svg>
+      <svg class="flex-auto js-geomicon icon m2" data-icon="search"></svg>
+      <svg class="flex-auto js-geomicon icon m2" data-icon="chevron-right"></svg>
     </div>
   </section>
 
@@ -127,7 +129,7 @@
     <h1 class="h2">Typography</h1>
     <hr>
     <div class="sm-flex mxn2">
-      <div class="sm-col-6 px2">
+      <div class="sm-col-6 lg-col-4 px2">
         <h1 class="mt0">Hamburger 1</h1>
         <h2>Hamburger 2</h2>
         <h3>Hamburger 3</h3>
@@ -135,10 +137,22 @@
         <h5>Hamburger 5</h5>
         <h6>Hamburger 6</h6>
       </div>
-      <div class="sm-col-6 px2">
-        <p class="h3">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
-        <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
-        <p class="h6">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
+      <div class="sm-col-6 lg-col-8">
+        <div class="px2">
+          <h2 class="mt0">Body Copy</h2>
+          <hr>
+        </div>
+        <div class="lg-flex">
+          <div class="lg-col-6 px2">
+            <p class="h3 serif">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
+          </div>
+          <div class="lg-col-6 px2">
+            <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
+          </div>
+        </div>
+        <div class="px2">
+          <p class="h6">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -147,7 +161,7 @@
     <h1 class="h2">Typography</h1>
     <hr>
     <div class="sm-flex mxn2">
-      <div class="sm-col-6 px2">
+      <div class="sm-col-6 lg-col-4 px2">
         <h1 class="mt0">Hamburger 1</h1>
         <h2>Hamburger 2</h2>
         <h3>Hamburger 3</h3>
@@ -155,10 +169,22 @@
         <h5>Hamburger 5</h5>
         <h6>Hamburger 6</h6>
       </div>
-      <div class="sm-col-6 px2">
-        <p class="h3">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
-        <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
-        <p class="h6">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
+      <div class="sm-col-6 lg-col-8">
+        <div class="px2">
+          <h2 class="mt0">Body Copy</h2>
+          <hr>
+        </div>
+        <div class="lg-flex">
+          <div class="lg-col-6 px2">
+            <p class="h3 serif">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
+          </div>
+          <div class="lg-col-6 px2">
+            <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
+          </div>
+        </div>
+        <div class="px2">
+          <p class="h6">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -167,25 +193,40 @@
     <h1 class="h2">Typography</h1>
     <hr>
     <div class="sm-flex mxn2">
-      <div class="sm-col-6 px2">
-        <h1 class="mt0 bg-red-alpha">Hamburger 1</h1>
+      <div class="sm-col-6 lg-col-4 px2">
+        <h1 class="mt0">Hamburger 1</h1>
         <h2>Hamburger 2</h2>
         <h3>Hamburger 3</h3>
         <h4>Hamburger 4</h4>
         <h5>Hamburger 5</h5>
         <h6>Hamburger 6</h6>
       </div>
-      <div class="sm-col-6 px2">
-        <p class="h3">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
-        <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
-        <p class="h6">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
+      <div class="sm-col-6 lg-col-8">
+        <div class="px2">
+          <h2 class="mt0">Body Copy</h2>
+          <hr>
+        </div>
+        <div class="lg-flex">
+          <div class="lg-col-6 px2">
+            <p class="h3 serif">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
+          </div>
+          <div class="lg-col-6 px2">
+            <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
+          </div>
+        </div>
+        <div class="px2">
+          <p class="h6">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="typography-red-dark" class="px2 py3 red bg-dark-gray">
     <div class="container">
-      <h1 class="h2 inline-block bg-red-alpha">Typography</h1>
+      <h1 class="h2 inline-block">
+        Typography
+        <code class="h4 bg-red-alpha">v0.0.1</code>
+      </h1>
       <hr>
       <div class="sm-flex mxn2">
         <div class="sm-col-6 px2">
@@ -207,7 +248,10 @@
 
   <section id="typography-blue-dark" class="px2 py3 blue bg-dark-gray">
     <div class="container">
-      <h1 class="h2 inline-block bg-blue-alpha">Typography</h1>
+      <h1 class="h2 inline-block">
+        Typography
+        <code class="h4 bg-blue-alpha">v0.0.1</code>
+      </h1>
       <hr>
       <div class="sm-flex mxn2">
         <div class="sm-col-6 px2">
@@ -229,7 +273,10 @@
 
   <section id="typography-green-dark" class="px2 py3 green bg-dark-gray">
     <div class="container">
-      <h1 class="h2 inline-block bg-green-alpha">Typography</h1>
+      <h1 class="h2 inline-block">
+        Typography
+        <code class="h4 bg-green-alpha">v0.0.1</code>
+      </h1>
       <hr>
       <div class="sm-flex mxn2">
         <div class="sm-col-6 px2">
@@ -251,7 +298,10 @@
 
   <section id="typography-yellow-dark" class="px2 py3 yellow bg-dark-gray">
     <div class="container">
-      <h1 class="h2 inline-block bg-yellow-alpha">Typography</h1>
+      <h1 class="h2 inline-block">
+        Typography
+        <code class="h4 bg-yellow-alpha">v0.0.1</code>
+      </h1>
       <hr>
       <div class="sm-flex mxn2">
         <div class="sm-col-6 px2">
