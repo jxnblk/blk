@@ -75,7 +75,7 @@ gulp.task('s3', function() {
   var config = require('./aws.json');
   gulp.src('./css/*.css')
     .pipe(s3(config, {
-      uploadPath: 'blk/' + version
+      uploadPath: 'blk/' + version + '/'
     }));
 });
 

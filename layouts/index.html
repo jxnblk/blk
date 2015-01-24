@@ -11,17 +11,17 @@
 <body>
 
   <header class="px2 py4 blue bg-dark-gray">
-    <div class="container">
-      <div class="sm-flex flex-center">
-        <h1 class="h0 h0-responsive m0 flex-auto">
+    <div class="container sm-flex flex-center">
+      <div class="flex-auto">
+        <h1 class="h00 h00-responsive m0">
           Blk
           <small class="h6 caps">v<%= version %></small>
         </h1>
-        <p class="h6 bold caps m0">A Style Guide</p>
+        <a href="<%= cdn %>" class="block py1 overflow-auto">
+          <code class="blue bg-blue-alpha"><%= cdn %></code>
+        </a>
       </div>
-      <a href="<%= cdn %>">
-        <code class="blue bg-blue-alpha"><%= cdn %></code>
-      </a>
+      <p class="h6 bold caps m0">A Style Guide</p>
     </div>
   </header>
 
