@@ -20,7 +20,7 @@
     "flex-object": "0.0.4",
     "geomicons-open": "0.0.6",
     "cssstats": "latest",
-    "gulp-css-statistics": "latest",
+    "gulp-cssstats": "latest",
     "gulp-compile-handlebars": "^0.4.3",
     "gulp-s3": "^0.3.0",
     "gulp-gzip": "0.0.8",

@@ -5,7 +5,7 @@ var rename = require('gulp-rename');
 var basswork = require('gulp-basswork');
 var minifyCss = require('gulp-minify-css');
 var webserver = require('gulp-webserver');
-var cssstats = require('gulp-css-statistics');
+var cssstats = require('gulp-cssstats');
 var s3 = require('gulp-s3');
 var gzip = require('gulp-gzip');
 var Humanize = require('humanize-plus');
@@ -49,6 +49,12 @@ gulp.task('build', function() {
   ];
   data.cdn = '//d2v52k3cl9vedd.cloudfront.net/blk/' + data.version + '/blk.min.css';
   data.stats = require('./stats/blk.json');
+  data.number = function(n) {
+    return Humanize.formatNumber(n);
+  };
+  data.filesize = function(n) {
+    return Humanize.filesize(n);
+  };
   data.coreStats = require('./stats/blk-core.json');
   var compile = function() {
     return through.obj(function(file, encoding, callback) {
