@@ -44,7 +44,17 @@
     "basscss-utility-typography": "0.0.2",
     "basscss-utility-responsive-states": "0.0.2",
     "basscss-ui-utility-groups": "0.0.4",
-    "basscss-utility-white-space": "0.0.3"
+    "basscss-utility-white-space": "0.0.3",
+    "basscss-button-blue-outline": "0.0.3",
+    "basscss-button-red": "0.0.1",
+    "basscss-button-light-gray": "0.0.2",
+    "basscss-button-blue": "0.0.1",
+    "basscss-button-nav-dark": "0.0.3",
+    "basscss-button-nav-light": "0.0.2",
+    "basscss-highlight": "0.0.1",
+    "lodash": "^2.4.1",
+    "through2": "^0.6.3",
+    "cheerio": "^0.18.0"
   },
   "scripts": {
     "start": "gulp"

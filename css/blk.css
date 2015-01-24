@@ -1,7 +1,4 @@
-/*
-    B L K
-
-*/
+/* B L K */
 
 /* Basscss Modules */
 
@@ -700,49 +697,7 @@ td {
 
 
 
-/* Basscss UI Utility Groups */
-
-.x-group-item {
-  margin-left: -1px;
-}
-
-.x-group-item:first-of-type {
-  margin-left: 0;
-}
-
-.y-group-item {
-  margin-top: -1px;
-}
-
-.y-group-item:first-of-type {
-  margin-top: 0;
-}
-
-/* Extension for 2px border items like .button-blue-outline */
-
-.x-group-item-2 {
-  margin-left: -2px;
-}
-
-.x-group-item-2:first-of-type {
-  margin-left: 0;
-}
-
-.y-group-item-2 {
-  margin-top: -2px;
-}
-
-.y-group-item-2:first-of-type {
-  margin-top: 0;
-}
-
-.x-group-item:focus,
-.x-group-item-2:focus,
-.y-group-item:focus,
-.y-group-item-2:focus {
-  position: relative;
-  z-index: 1;
-}
+/* @import 'basscss-ui-utility-groups'; */
 
 /* Basscss Grid */
 
@@ -1219,7 +1174,7 @@ hr {
 }
 
 .field-light:invalid {
-  border-color: #ff3030;
+  border-color: #ff4916;
 }
 
 .field-light.is-success {
@@ -1231,7 +1186,7 @@ hr {
 }
 
 .field-light.is-error {
-  border-color: #ff3030;
+  border-color: #ff4916;
 }
 
 .radio-light,
@@ -1252,57 +1207,7 @@ hr {
 
 
 
-/* Basscss Color Forms Dark */
-
-.field-dark {
-  color: white;
-  background-color: rgba(0, 0, 0, .25);
-  border: 1px solid rgba(0, 0, 0, .0625);
-  border-radius: 3px;
-}
-
-.field-dark::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, .75);
-}
-
-.field-dark::-moz-placeholder {
-  color: rgba(255, 255, 255, .75);
-}
-
-.field-dark:-ms-input-placeholder {
-  color: rgba(255, 255, 255, .75);
-}
-
-.field-dark::placeholder {
-  color: rgba(255, 255, 255, .75);
-}
-
-.field-dark:focus {
-  outline: 0;
-  border: 1px solid rgba(255, 255, 255, .5);
-}
-
-.field-dark:read-only:not(select) {
-  background-color: rgba(255, 255, 255, .25);
-}
-
-.field-dark:invalid {
-  border-color: #ff3030;
-}
-
-.field-dark.is-success {
-  border-color: #00ef60;
-}
-
-.field-dark.is-warning {
-  border-color: #ffdf00;
-}
-
-.field-dark.is-error {
-  border-color: #ff3030;
-}
-
-
+/* @import 'basscss-color-forms-dark'; */
 
 /* Basscss Color Tables */
 
@@ -1316,242 +1221,6 @@ hr {
 .table-light tr:last-child td {
   border-bottom: 0;
 }
-
-
-
-/* Basscss Color Buttons */
-
-/* Basscss Button Light Gray */
-
-.button-light-gray {
-  color: #263c46;
-  background-color: #d3d9d9;
-  border-radius: 3px;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-property: box-shadow, background-color;
-          transition-property: box-shadow, background-color;
-}
-
-.button-light-gray:hover {
-  opacity: .875;
-}
-
-.button-light-gray:active,
-.button-light-gray:is-active {
-  box-shadow: inset 0 0 0 32px rgba(0, 0, 0, .125), inset 0 2px 3px 0 rgba(0, 0, 0, .25);
-}
-
-.button-light-gray:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(0, 175, 239, .5);
-}
-
-.button-light-gray:disabled,
-.button-light-gray.is-disabled {
-  opacity: .5;
-}
-
-
-
-/* Basscss Button Blue */
-
-.button-blue {
-  color: white;
-  background-color: #00afef;
-  border-radius: 3px;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-property: box-shadow, background-color;
-          transition-property: box-shadow, background-color;
-}
-
-.button-blue:hover {
-  opacity: .875;
-}
-
-.button-blue:active,
-.button-blue.is-active {
-  box-shadow: inset 0 0 0 32px rgba(0, 0, 0, .125), inset 0 2px 3px 0 rgba(0, 0, 0, .25);
-}
-
-.button-blue:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, .5), 0 0 1px 4px rgba(0, 175, 239, .5);
-}
-
-.button-blue:disabled,
-.button-blue.is-disabled {
-  opacity: .5;
-}
-
-
-
-/* Basscss Button Blue Outline */
-
-.button-blue-outline {
-  line-height: 1rem;
-  color: #00afef;
-  background-color: transparent;
-  border-radius: 3px;
-  border: 2px solid #00afef;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-property: box-shadow, background-color;
-          transition-property: box-shadow, background-color;
-}
-
-.button-blue-outline:hover,
-.button-blue-outline.is-active {
-  color: white;
-  background-color: #00afef;
-}
-
-.button-blue-outline:active {
-  box-shadow: inset 0 3px 3px 0 rgba(0, 0, 0, .25);
-}
-
-.button-blue-outline:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, .5), 0 0 1px 4px rgba(0, 175, 239, .5);
-}
-
-.button-blue-outline:disabled,
-.button-blue-outline.is-disabled {
-  color: #00afef;
-  background-color: transparent;
-  opacity: .5;
-}
-
-
-
-/* Basscss Button Gray */
-
-.button-gray {
-  color: white;
-  background-color: #667680;
-  border-radius: 3px;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-property: box-shadow, background-color;
-          transition-property: box-shadow, background-color;
-}
-
-.button-gray:hover {
-  opacity: .875;
-}
-
-.button-gray:active,
-.button-gray:is-active {
-  box-shadow: inset 0 0 0 32px rgba(0, 0, 0, .125), inset 0 2px 3px 0 rgba(0, 0, 0, .25);
-}
-
-.button-gray:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(0, 175, 239, .5);
-}
-
-.button-gray:disabled,
-.button-gray.is-disabled {
-  opacity: .5;
-}
-
-
-
-/* Basscss Button Red */
-
-.button-red {
-  color: white;
-  background-color: #ff3030;
-  border-radius: 3px;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-property: box-shadow, background-color;
-          transition-property: box-shadow, background-color;
-}
-
-.button-red:hover {
-  opacity: .875;
-}
-
-.button-red:active,
-.button-red.is-active {
-  box-shadow: inset 0 0 0 32px rgba(0, 0, 0, .125), inset 0 2px 3px 0 rgba(0, 0, 0, .25);
-}
-
-.button-red:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, .5), 0 0 1px 4px rgba(255, 48, 48, .5);
-}
-
-.button-red:disabled,
-.button-red.is-disabled {
-  opacity: .5;
-}
-
-
-
-/* Basscss Button Nav Light */
-
-.button-nav-light:hover {
-  background-color: rgba(0, 0, 0, .0625);
-}
-
-.button-nav-light:active,
-.button-nav-light.is-active {
-  color: #263c46;
-}
-
-
-
-/* Basscss Button Nav Dark */
-
-.button-nav-dark {
-  color: white;
-}
-
-.button-nav-dark:hover {
-  background-color: rgba(0, 0, 0, .125);
-}
-
-.button-nav-dark:active,
-.button-nav-dark.is-active {
-  background-color: rgba(0, 0, 0, .125);
-}
-
-
-
-/* Basscss Button Nav Tab */
-
-.button-nav-tab {
-  margin-bottom: -1px;
-  border-radius: 3px 3px 0 0;
-  border-bottom: 1px solid currentcolor;
-}
-
-.button-nav-tab:hover {
-  background-color: rgba(0, 0, 0, .0625);
-}
-
-.button-nav-tab.is-active {
-  background-color: white;
-  border-bottom: 1px solid white;
-  border-top: 1px solid currentcolor;
-  border-left: 1px solid currentcolor;
-  border-right: 1px solid currentcolor;
-}
-
-
 
 
 
@@ -1582,7 +1251,7 @@ hr {
 }
 
 .red {
-  color: #ff3030;
+  color: #ff4916;
 }
 
 .green {
@@ -1618,7 +1287,7 @@ hr {
 }
 
 .bg-red {
-  background-color: #ff3030;
+  background-color: #ff4916;
 }
 
 .bg-green {
@@ -1709,226 +1378,7 @@ hr {
 
 
 
-pre {
-  padding: 1rem;
-}
-
-code,
-p code {
-  font-size: 87.5%;
-}
-
-svg {
-  fill: currentcolor;
-}
-
-.sf-display {
-  font-family: 'San Francisco Display', 'Avenir Next', Helvetica, sans-serif;
-}
-
-.sf-text {
-  font-family: 'San Francisco Text', 'Avenir Next', Helvetica, sans-serif;
-}
-
-.georgia {
-  font-family: Georgia, serif;
-}
-
-.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-}
-
-body {
-  color: #263c46;
-  background-color: white;
-}
-
-a {
-  color: #00afef;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-pre,
-code {
-  background-color: rgba(0, 0, 0, .0625);
-  border-radius: 3px;
-}
-
-hr {
-  border: 0;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-}
-
-.bright-blue {
-  color: #0096ff;
-}
-
-.aqua {
-  color: #40bfc0;
-}
-
-.bg-bright-blue {
-  background-color: #0096ff;
-}
-
-.bg-aqua {
-  background-color: #40bfc0;
-}
-
-/*
-*/
-
-.dark-gray {
-  color: #263c46;
-}
-
-.white {
-  color: white;
-}
-
-.blue {
-  color: #00afef;
-}
-
-.mid-gray {
-  color: #667680;
-}
-
-.light-gray {
-  color: #d3d9d9;
-}
-
-.lighter-gray {
-  color: #f3f9f9;
-}
-
-.red {
-  color: #ff3030;
-}
-
-.green {
-  color: #00ef60;
-}
-
-.yellow {
-  color: #ffdf00;
-}
-
-.bg-dark-gray {
-  background-color: #263c46;
-}
-
-.bg-white {
-  background-color: white;
-}
-
-.bg-blue {
-  background-color: #00afef;
-}
-
-.bg-mid-gray {
-  background-color: #667680;
-}
-
-.bg-light-gray {
-  background-color: #d3d9d9;
-}
-
-.bg-lighter-gray {
-  background-color: #f3f9f9;
-}
-
-.bg-red {
-  background-color: #ff3030;
-}
-
-.bg-green {
-  background-color: #00ef60;
-}
-
-.bg-yellow {
-  background-color: #ffdf00;
-}
-
-.bg-darken-1 {
-  background-color: rgba(0, 0, 0, .0625);
-}
-
-.bg-darken-2 {
-  background-color: rgba(0, 0, 0, .125);
-}
-
-.bg-darken-3 {
-  background-color: rgba(0, 0, 0, .25);
-}
-
-.bg-darken-4 {
-  background-color: rgba(0, 0, 0, .5);
-}
-
-.bg-blue-alpha {
-  background-color: rgba(0, 175, 239, .25);
-}
-
-.bg-red-alpha {
-  background-color: rgba(255, 48, 48, .25);
-}
-
-.bg-green-alpha {
-  background-color: rgba(0, 239, 96, .25);
-}
-
-.bg-yellow-alpha {
-  background-color: rgba(255, 223, 0, .25);
-}
-
-.border {
-  border-style: solid;
-  border-width: 2px;
-}
-
-.border-top {
-  border-top-style: solid;
-  border-top-width: 2px;
-}
-
-.border-right {
-  border-right-style: solid;
-  border-right-width: 2px;
-}
-
-.border-bottom {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-}
-
-.border-left {
-  border-left-style: solid;
-  border-left-width: 2px;
-}
-
-.border-2 {
-  border-width: 4px;
-}
-
-.rounded {
-  border-radius: 3px;
-}
-
-.circle {
-  border-radius: 50%;
-}
-
-.border-light-gray {
-  border-color: #d3d9d9;
-}
+/* Basscss Button Blue */
 
 .button-blue {
   color: white;
@@ -1961,8 +1411,11 @@ hr {
   opacity: .5;
 }
 
+
+
+/* Basscss Button Blue Outline */
+
 .button-blue-outline {
-  line-height: 1;
   color: #00afef;
   background-color: transparent;
   border-radius: 3px;
@@ -1997,22 +1450,88 @@ hr {
   opacity: .5;
 }
 
-/*
 
-github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
-*/
+/* Basscss Button Light Gray */
+
+.button-light-gray {
+  color: #263c46;
+  background-color: #d3d9d9;
+  border-radius: 3px;
+  -webkit-transition-duration: .1s;
+          transition-duration: .1s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-property: box-shadow, background-color;
+          transition-property: box-shadow, background-color;
+}
+
+.button-light-gray:hover {
+  opacity: .875;
+}
+
+.button-light-gray:active,
+.button-light-gray:is-active {
+  box-shadow: inset 0 0 0 32px rgba(0, 0, 0, .125), inset 0 2px 3px 0 rgba(0, 0, 0, .25);
+}
+
+.button-light-gray:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(0, 175, 239, .5);
+}
+
+.button-light-gray:disabled,
+.button-light-gray.is-disabled {
+  opacity: .5;
+}
+
+
+
+/* Basscss Button Red */
+
+.button-red {
+  color: white;
+  background-color: #ff4916;
+  border-radius: 3px;
+  -webkit-transition-duration: .1s;
+          transition-duration: .1s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-property: box-shadow, background-color;
+          transition-property: box-shadow, background-color;
+}
+
+.button-red:hover {
+  opacity: .875;
+}
+
+.button-red:active,
+.button-red.is-active {
+  box-shadow: inset 0 0 0 32px rgba(0, 0, 0, .125), inset 0 2px 3px 0 rgba(0, 0, 0, .25);
+}
+
+.button-red:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, .5), 0 0 1px 4px rgba(255, 73, 22, .5);
+}
+
+.button-red:disabled,
+.button-red.is-disabled {
+  opacity: .5;
+}
+
+
+
+/* Basscss Highlight */
 
 .hljs {
-  display: block;
-  overflow-x: auto;
   -webkit-text-size-adjust: none;
 }
 
 .hljs-comment,
 .diff .hljs-header,
 .hljs-javadoc {
-  color: #998;
+  color: #667680;
   font-style: italic;
 }
 
@@ -2023,14 +1542,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-subst,
 .hljs-request,
 .hljs-status {
-  color: #333;
+  color: #263c46;
   font-weight: bold;
 }
 
 .hljs-number,
 .hljs-hexcolor,
 .ruby .hljs-constant {
-  color: #008080;
+  color: #009f06;
 }
 
 .hljs-string,
@@ -2038,13 +1557,13 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-phpdoc,
 .hljs-dartdoc,
 .tex .hljs-formula {
-  color: #d14;
+  color: #ff4916;
 }
 
 .hljs-title,
 .hljs-id,
 .scss .hljs-preprocessor {
-  color: #900;
+  color: #ff4916;
   font-weight: bold;
 }
 
@@ -2057,7 +1576,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-type,
 .vhdl .hljs-literal,
 .tex .hljs-command {
-  color: #458;
+  color: #006faf;
   font-weight: bold;
 }
 
@@ -2065,18 +1584,18 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-tag .hljs-title,
 .hljs-rules .hljs-property,
 .django .hljs-tag .hljs-keyword {
-  color: #000080;
+  color: #006faf;
   font-weight: normal;
 }
 
 .hljs-attribute,
 .hljs-variable,
 .lisp .hljs-body {
-  color: #008080;
+  color: #009f06;
 }
 
 .hljs-regexp {
-  color: #009926;
+  color: #009f06;
 }
 
 .hljs-symbol,
@@ -2086,11 +1605,11 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .scheme .hljs-keyword,
 .tex .hljs-special,
 .hljs-prompt {
-  color: #990073;
+  color: #f92080;
 }
 
 .hljs-built_in {
-  color: #0086b3;
+  color: #006faf;
 }
 
 .hljs-preprocessor,
@@ -2099,44 +1618,82 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-doctype,
 .hljs-shebang,
 .hljs-cdata {
-  color: #999;
+  color: #667680;
   font-weight: bold;
 }
 
 .hljs-deletion {
-  background: #fdd;
+  background: #ffdddd;
 }
 
 .hljs-addition {
-  background: #dfd;
+  background: #ddffdd;
 }
 
 .diff .hljs-change {
-  background: #0086b3;
+  background: #006faf;
 }
 
 .hljs-chunk {
-  color: #aaa;
+  color: #d3d9d9;
+}
+
+:root {
+  /* Mapped colors */
+}
+
+pre {
+  padding: 1rem;
+}
+
+code,
+p code {
+  font-size: 87.5%;
+}
+
+svg {
+  fill: currentcolor;
+}
+
+.sf-display {
+  font-family: 'San Francisco Display', 'Avenir Next', Helvetica, sans-serif;
+}
+
+.sf-text {
+  font-family: 'San Francisco Text', 'Avenir Next', Helvetica, sans-serif;
+}
+
+.georgia {
+  font-family: Georgia, serif;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+
+/* @import './color/base'; */
+
+/* @import './color/borders'; */
+
+.bg-blue-alpha {
+  background-color: rgba(0, 175, 239, .25);
+}
+
+.bg-red-alpha {
+  background-color: rgba(255, 73, 22, .25);
+}
+
+.bg-green-alpha {
+  background-color: rgba(0, 239, 96, .25);
+}
+
+.bg-yellow-alpha {
+  background-color: rgba(255, 223, 0, .25);
 }
 
 /* Basscss Defaults */
 
 
 
-/* Custom media queries */
-
-/* Variables */
-
-:root {
-  /* Grid container max-width */
-  /* Colors */
-  /* From Bassdock theme */
-  /*
-  --dark-gray: #445;
-    --dark-gray: #556;
-  --mid-gray: #868690;
-  --light-gray: #ccccd6;
-  --lighter-gray: #f6f6fc;
-  */
-  /* Plangular */
-}

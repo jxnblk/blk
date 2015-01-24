@@ -1,8 +1,4 @@
-/*
-    B L K
-
-*/
-
+/* B L K */
 
 /* Basscss Modules */
 @import 'basscss-base-reset';
@@ -19,48 +15,45 @@
 @import 'basscss-utility-headings';
 
 @import 'basscss-ui-utility-button-sizes';
-@import 'basscss-ui-utility-groups';
+/* @import 'basscss-ui-utility-groups'; */
 
 @import 'basscss-grid';
 @import 'flex-object';
 
 @import 'basscss-color-base';
 @import 'basscss-color-forms';
-@import 'basscss-color-forms-dark';
+/* @import 'basscss-color-forms-dark'; */
 @import 'basscss-color-tables';
-@import 'basscss-color-buttons';
 @import 'basscss-colors';
 @import 'basscss-color-borders';
 
+@import 'basscss-button-blue';
+@import 'basscss-button-blue-outline';
+@import 'basscss-button-light-gray';
+@import 'basscss-button-red';
+
+@import 'basscss-highlight';
 
 @import './base/typography';
 @import './base/svg';
 @import './utility/fonts';
 @import './utility/icons';
 
-@import './color/base';
+/* @import './color/base'; */
+/* @import './color/borders'; */
 @import './color/colors';
-@import './color/borders';
-@import './color/button-blue';
-@import './color/button-blue-outline';
-@import './color/highlight';
 
 @import 'basscss-defaults';
 
-/* Custom media queries */
 @custom-media --breakpoint-sm (min-width: 40em);
 @custom-media --breakpoint-md (min-width: 52em);
 @custom-media --breakpoint-lg (min-width: 64em);
 
 
-/* Variables */
 :root {
 
   --font-family: 'Avenir Next', 'Helvetica Neue', Helvetica, sans-serif;
   --line-height: 1.5;
-  --heading-font-family: var(--font-family);
-  --heading-font-weight: 600;
-  --heading-line-height: 1.25;
   --monospace-font-family: 'Source Code Pro', Consolas, monospace;
 
   --h1: 2.5rem;
@@ -69,10 +62,11 @@
   --h4: 1.125rem;
   --h5: 1rem;
   --h6: .875rem;
+  --heading-font-family: var(--font-family);
+  --heading-font-weight: 600;
+  --heading-line-height: 1.25;
 
   --bold-font-weight: 600;
-  --button-font-weight: 600;
-  --heading-font-weight: 600;
 
   --space-1: .5rem;
   --space-2: 1rem;
@@ -80,28 +74,21 @@
   --space-4: 4rem;
 
   --button-font-size: .875rem;
+  --button-font-weight: 600;
 
-  /* Grid container max-width */
   --container-width: 72em;
 
-  /* Colors */
-  --blue: #0076df;
-  --red: #f95c10;
-  --green: #00cf26;
-  --green: #30cf77;
-  --yellow: #ffc300;
-
-  --dark-gray: #304650;
-    --dark-gray: #263c46;
+  --dark-gray: #263c46;
   --mid-gray: #667680;
   --light-gray: #d3d9d9;
   --lighter-gray: #f3f9f9;
 
-  --bright-blue: #0096ff;
-  --aqua: #40bfc0;
-
-    --blue: var(--bright-blue);
-    --blue: #0089ff;
+  --blue: #00afef;
+  --green: #00ef60;
+  --yellow: #ffdf00;
+  --red: #ff4916;
+  --dark-blue: #006faf;
+  --light-blue: rgba(var(--blue), .0625);
 
   --darken-1: rgba(#000,.0625);
   --darken-2: rgba(#000,.125);
@@ -113,24 +100,6 @@
   --border-width: 2px;
   --border-radius: 3px;
 
-  /* From Bassdock theme */
-  /*
-  --dark-gray: #445;
-    --dark-gray: #556;
-  --mid-gray: #868690;
-  --light-gray: #ccccd6;
-  --lighter-gray: #f6f6fc;
-  */
-
-  --blue: #00afef;
-  --green: #00ef60;
-  --yellow: #ffdf00;
-  --red: #ff6000;
-  --red: #f95c10;
-    --red: #f52; /* Plangular */
-  --red: #ff3030;
-  --dark-blue: #006faf;
-  --light-blue: rgba(var(--blue), .0625);
-
 }
+
 
