@@ -96,7 +96,7 @@
   --darken-4: rgba(#000,.5);
 
   --border-color: var(--light-gray);
-  --border-color: currentcolor;
+  --border-color: inherit;
   --border-width: 2px;
   --border-radius: 3px;
 

@@ -1141,7 +1141,7 @@ hr {
   border: 0;
   border-bottom-style: solid;
   border-bottom-width: 2px;
-  border-bottom-color: currentcolor;
+  border-bottom-color: inherit;
 }
 
 
@@ -1154,7 +1154,7 @@ hr {
           transition: box-shadow .2s ease;
   border-style: solid;
   border-width: 2px;
-  border-color: currentcolor;
+  border-color: inherit;
   border-radius: 3px;
 }
 
@@ -1215,7 +1215,7 @@ hr {
 .table-light td {
   border-bottom-style: solid;
   border-bottom-width: 2px;
-  border-bottom-color: currentcolor;
+  border-bottom-color: inherit;
 }
 
 .table-light tr:last-child td {
@@ -1321,31 +1321,31 @@ hr {
 .border {
   border-style: solid;
   border-width: 2px;
-  border-color: currentcolor;
+  border-color: inherit;
 }
 
 .border-top {
   border-top-style: solid;
   border-top-width: 2px;
-  border-top-color: currentcolor;
+  border-top-color: inherit;
 }
 
 .border-right {
   border-right-style: solid;
   border-right-width: 2px;
-  border-right-color: currentcolor;
+  border-right-color: inherit;
 }
 
 .border-bottom {
   border-bottom-style: solid;
   border-bottom-width: 2px;
-  border-bottom-color: currentcolor;
+  border-bottom-color: inherit;
 }
 
 .border-left {
   border-left-style: solid;
   border-left-width: 2px;
-  border-left-color: currentcolor;
+  border-left-color: inherit;
 }
 
 .rounded {
