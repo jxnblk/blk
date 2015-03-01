@@ -1,6 +1,6 @@
 {
-  "size": 9169,
-  "gzipSize": 2279,
+  "size": 9205,
+  "gzipSize": 2277,
   "selectors": [
     {
       "selector": "body",
@@ -3652,13 +3652,13 @@
       {
         "type": "decl",
         "prop": "font-family",
-        "value": "'San Francisco Display', 'Avenir Next', Helvetica, sans-serif",
+        "value": "'San Francisco Display', 'Avenir Next', 'Helvetica Neue', Helvetica, sans-serif",
         "index": 173
       },
       {
         "type": "decl",
         "prop": "font-family",
-        "value": "'San Francisco Text', 'Avenir Next', Helvetica, sans-serif",
+        "value": "'San Francisco Text', 'Avenir Next', 'Helvetica Neue', Helvetica, sans-serif",
         "index": 174
       },
       {
@@ -4107,13 +4107,13 @@
         {
           "type": "decl",
           "prop": "font-family",
-          "value": "'San Francisco Display', 'Avenir Next', Helvetica, sans-serif",
+          "value": "'San Francisco Display', 'Avenir Next', 'Helvetica Neue', Helvetica, sans-serif",
           "index": 173
         },
         {
           "type": "decl",
           "prop": "font-family",
-          "value": "'San Francisco Text', 'Avenir Next', Helvetica, sans-serif",
+          "value": "'San Francisco Text', 'Avenir Next', 'Helvetica Neue', Helvetica, sans-serif",
           "index": 174
         },
         {
@@ -5648,13 +5648,7 @@
         {
           "type": "decl",
           "prop": "font-family",
-          "value": "'San Francisco Display', 'Avenir Next', Helvetica, sans-serif",
-          "index": 173
-        },
-        {
-          "type": "decl",
-          "prop": "font-family",
-          "value": "'San Francisco Text', 'Avenir Next', Helvetica, sans-serif",
+          "value": "'San Francisco Text', 'Avenir Next', 'Helvetica Neue', Helvetica, sans-serif",
           "index": 174
         },
         {
@@ -9723,7 +9717,7 @@
         {
           "type": "decl",
           "prop": "font-family",
-          "value": "'San Francisco Display', 'Avenir Next', Helvetica, sans-serif",
+          "value": "'San Francisco Display', 'Avenir Next', 'Helvetica Neue', Helvetica, sans-serif",
           "index": 173
         }
       ],
@@ -9731,7 +9725,7 @@
         {
           "type": "decl",
           "prop": "font-family",
-          "value": "'San Francisco Display', 'Avenir Next', Helvetica, sans-serif",
+          "value": "'San Francisco Display', 'Avenir Next', 'Helvetica Neue', Helvetica, sans-serif",
           "index": 173
         }
       ],
@@ -9743,7 +9737,7 @@
         {
           "type": "decl",
           "prop": "font-family",
-          "value": "'San Francisco Text', 'Avenir Next', Helvetica, sans-serif",
+          "value": "'San Francisco Text', 'Avenir Next', 'Helvetica Neue', Helvetica, sans-serif",
           "index": 174
         }
       ],
@@ -9751,7 +9745,7 @@
         {
           "type": "decl",
           "prop": "font-family",
-          "value": "'San Francisco Text', 'Avenir Next', Helvetica, sans-serif",
+          "value": "'San Francisco Text', 'Avenir Next', 'Helvetica Neue', Helvetica, sans-serif",
           "index": 174
         }
       ],
@@ -10813,7 +10807,7 @@
     },
     "fontFamily": {
       "total": 7,
-      "unique": 6
+      "unique": 5
     },
     "fontSize": {
       "total": 11,

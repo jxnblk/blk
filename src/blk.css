@@ -2,10 +2,10 @@
 
 /* Basscss Modules */
 @import 'basscss-base-reset';
-@import 'basscss-base-typography';
 @import 'basscss-base-forms';
 @import 'basscss-base-buttons';
 @import 'basscss-base-tables';
+@import 'basscss-base-typography';
 
 @import 'basscss-utility-layout';
 @import 'basscss-utility-typography';
@@ -13,9 +13,7 @@
 @import 'basscss-utility-responsive-states';
 @import 'basscss-positions';
 @import 'basscss-utility-headings';
-
 @import 'basscss-ui-utility-button-sizes';
-/* @import 'basscss-ui-utility-groups'; */
 
 @import 'basscss-grid';
 @import 'flex-object';
@@ -23,14 +21,13 @@
 @import 'basscss-color-base';
 @import 'basscss-color-forms';
 /* @import 'basscss-color-forms-dark'; */
+@import 'basscss-input-range';
+@import 'basscss-button-outline';
+@import 'basscss-button-transparent';
 @import 'basscss-color-tables';
-@import 'basscss-colors';
 @import 'basscss-color-borders';
-
-@import 'basscss-button-blue';
-@import 'basscss-button-blue-outline';
-@import 'basscss-button-light-gray';
-@import 'basscss-button-red';
+@import 'basscss-background-images';
+@import 'basscss-colors';
 
 @import 'basscss-highlight';
 
@@ -38,12 +35,12 @@
 @import './base/svg';
 @import './utility/fonts';
 @import './utility/icons';
+@import './color/colors'; /* Alpha backgrounds */
+@import './color/border-thick';
 
-/* @import './color/base'; */
-/* @import './color/borders'; */
-@import './color/colors';
 
 @import 'basscss-defaults';
+
 
 @custom-media --breakpoint-sm (min-width: 40em);
 @custom-media --breakpoint-md (min-width: 52em);
@@ -78,10 +75,14 @@
 
   --container-width: 72em;
 
+  /*
   --dark-gray: #263c46;
   --mid-gray: #667680;
   --light-gray: #d3d9d9;
   --lighter-gray: #f3f9f9;
+  */
+  --black: #263c46;
+  --black: #16262c;
 
   --blue: #00afef;
   --green: #00ef60;
@@ -95,9 +96,9 @@
   --darken-3: rgba(#000,.25);
   --darken-4: rgba(#000,.5);
 
-  --border-color: var(--light-gray);
+  /* --border-color: var(--darken-3); */
   --border-color: inherit;
-  --border-width: 2px;
+  --border-width: 1px;
   --border-radius: 3px;
 
 }
