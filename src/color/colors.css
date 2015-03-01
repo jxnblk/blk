@@ -1,4 +1,7 @@
 
+.bright-blue { color: var(--bright-blue) }
+.bg-bright-blue { background-color: var(--bright-blue) }
+
 .bg-blue-alpha { background-color: rgba(var(--blue), .25) }
 .bg-red-alpha { background-color: rgba(var(--red), .25) }
 .bg-green-alpha { background-color: rgba(var(--green), .25) }

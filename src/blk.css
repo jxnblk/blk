@@ -75,21 +75,19 @@
 
   --container-width: 72em;
 
-  /*
-  --dark-gray: #263c46;
-  --mid-gray: #667680;
-  --light-gray: #d3d9d9;
-  --lighter-gray: #f3f9f9;
-  */
-  --black: #263c46;
+  /* --black: #263c46; */
   --black: #16262c;
 
+    /* --bright-blue: #00afef; */
+  --bright-blue: #0f8fff; /* For use on dark background */
+  --red: #ff4916;
+  /*
   --blue: #00afef;
   --green: #00ef60;
   --yellow: #ffdf00;
-  --red: #ff4916;
   --dark-blue: #006faf;
   --light-blue: rgba(var(--blue), .0625);
+  */
 
   --darken-1: rgba(#000,.0625);
   --darken-2: rgba(#000,.125);

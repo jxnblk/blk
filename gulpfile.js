@@ -46,6 +46,7 @@ gulp.task('build', function() {
   data.colors = [
     'black',
     'navy',
+    'bright-blue',
     'blue',
     'aqua',
     'teal',
@@ -62,7 +63,7 @@ gulp.task('build', function() {
   data.cdn = '//d2v52k3cl9vedd.cloudfront.net/blk/' + data.version + '/blk.min.css';
 
   // Development
-  //data.cdn = '/css/blk.css';
+  data.cdn = '/css/blk.css';
 
   data.stats = require('./stats/blk.json');
   data.number = function(n) {

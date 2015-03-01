@@ -629,6 +629,14 @@ hr {
   border-bottom-width: 1px;
 }
 
+.bright-blue {
+  color: #0096ff;
+}
+
+.bg-bright-blue {
+  background-color: #0096ff;
+}
+
 .bg-blue-alpha {
   background-color: rgba(0, 150, 255, .25);
 }
