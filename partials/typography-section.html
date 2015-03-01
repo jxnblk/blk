@@ -1,5 +1,5 @@
 <%
-  console.log(obj);
+
   obj.id = 'typography-' +
       (obj.background ? 'bg-' : '') +
       obj.color +
@@ -10,7 +10,7 @@
       obj.color + ' ' +
       (obj.dark ? 'bg-black' : '') +
       (obj.reverse ? 'white' : '');
-  console.log(obj.id, obj.className);
+
 %>
 
 <section id="<%= id %>" class="<%= className %>">
