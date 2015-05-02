@@ -4,6 +4,7 @@
   "description": "A style guide",
   "author": "Brent Jackson",
   "license": "MIT",
+  "style": "css/blk.css",
   "devDependencies": {
     "autobass": "^1.1.0",
     "basscss-background-images": "0.0.5",
