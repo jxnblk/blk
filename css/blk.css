@@ -31,7 +31,7 @@ textarea,
 fieldset {
   font-size: 1rem;
   margin-top: 0;
-  margin-bottom: .5rem;
+  margin-bottom: 0;
 }
 
 input[type=text],
@@ -81,6 +81,24 @@ textarea {
   padding: 0;
 }
 
+/* Basscss Defaults */
+
+/*
+
+   COLOR VARIABLES
+
+   - Cool
+   - Warm
+   - Gray Scale
+
+*/
+
+:root {
+  /* Cool */
+  /* Warm */
+  /* Gray scale */
+}
+
 
 
 /* Basscss Base Buttons */
@@ -102,6 +120,13 @@ button,
   -webkit-appearance: none;
 }
 
+button::after,
+button::before,
+.button::after,
+.button::before {
+  box-sizing: border-box;
+}
+
 ::-moz-focus-inner {
   border: 0;
   padding: 0;
@@ -110,6 +135,26 @@ button,
 .button:hover {
   text-decoration: none;
 }
+
+/* Basscss Defaults */
+
+/*
+
+   COLOR VARIABLES
+
+   - Cool
+   - Warm
+   - Gray Scale
+
+*/
+
+:root {
+  /* Cool */
+  /* Warm */
+  /* Gray scale */
+}
+
+
 
 
 
@@ -631,15 +676,6 @@ h6,
   z-index: 4;
 }
 
-.absolute-center {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  display: table;
-}
-
 /* Basscss Utility Headings */
 
 .h00 {
@@ -943,177 +979,7 @@ h6,
   }
 }
 
-
-
-/*
- * Basscss Flex Object
- */
-
-.flex {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.flex-column {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.flex-reverse {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -webkit-flex-direction: row-reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-
-.flex-wrap {
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-}
-
-.flex-center {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.flex-baseline {
-  -webkit-box-align: baseline;
-  -webkit-align-items: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
-.flex-stretch {
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-}
-
-.flex-start {
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.flex-end {
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.flex-justify-start {
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.flex-justify-end {
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.flex-justify-center {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.flex-justify-around {
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-}
-
-.flex-justify-between {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.flex-first {
-  -webkit-box-ordinal-group: 0;
-  -webkit-order: -1;
-      -ms-flex-order: -1;
-          order: -1;
-}
-
-.flex-last {
-  -webkit-box-ordinal-group: 1025;
-  -webkit-order: 1024;
-      -ms-flex-order: 1024;
-          order: 1024;
-}
-
-.flex-auto {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-}
-
-.flex-grow {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 0 auto;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-}
-
-.flex-none {
-  -webkit-box-flex: 0;
-  -webkit-flex: none;
-      -ms-flex: none;
-          flex: none;
-}
-
-.flex-wrap > div {
-  box-sizing: border-box;
-}
-
-@media (min-width: 40em) {
-  .sm-flex {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-@media (min-width: 52em) {
-  .md-flex {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-@media (min-width: 64em) {
-  .lg-flex {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-/* Basscss Color Base */
+/* Basscss Defaults */
 
 /*
 
@@ -1130,6 +996,156 @@ h6,
   /* Warm */
   /* Gray scale */
 }
+
+
+
+/*
+ * Basscss Flex Object
+ */
+
+.flex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-column {
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-reverse {
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.flex-wrap {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.flex-center {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-baseline {
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.flex-stretch {
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.flex-start {
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.flex-end {
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.flex-justify-start {
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.flex-justify-end {
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.flex-justify-center {
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-justify-around {
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+.flex-justify-between {
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-first {
+  -webkit-order: -1;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+.flex-last {
+  -webkit-order: 1024;
+      -ms-flex-order: 1024;
+          order: 1024;
+}
+
+.flex-auto {
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.flex-grow {
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.flex-none {
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+}
+
+.flex-wrap > div {
+  box-sizing: border-box;
+}
+
+@media (min-width: 40em) {
+  .sm-flex {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 52em) {
+  .md-flex {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 64em) {
+  .lg-flex {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+/* Basscss Color Base */
 
 body {
   color: #16262c;
@@ -1162,12 +1178,9 @@ hr {
   color: white;
   background-color: #0074d9;
   border-radius: 3px;
-  -webkit-transition-duration: .05s;
-          transition-duration: .05s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-property: box-shadow, background-color;
-          transition-property: box-shadow, background-color;
+  transition-duration: .05s;
+  transition-timing-function: ease-out;
+  transition-property: box-shadow, background-color;
 }
 
 .button:hover {
@@ -1177,7 +1190,7 @@ hr {
 .button:focus {
   outline: none;
   border-color: rgba(0, 0, 0, .125);
-  box-shadow: 0 0 2px 1px rgba(0, 0, 0, .25);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, .25);
 }
 
 .button:active,
@@ -1192,14 +1205,33 @@ hr {
   opacity: .5;
 }
 
+/* Basscss Defaults */
+
+/*
+
+   COLOR VARIABLES
+
+   - Cool
+   - Warm
+   - Gray Scale
+
+*/
+
+:root {
+  /* Cool */
+  /* Warm */
+  /* Gray scale */
+}
+
+
+
 
 
 /* Basscss Color Forms */
 
 .field-light {
   background-color: white;
-  -webkit-transition: box-shadow .2s ease;
-          transition: box-shadow .2s ease;
+  transition: box-shadow .2s ease;
   border-style: solid;
   border-width: 1px;
   border-color: inherit;
@@ -1239,8 +1271,7 @@ hr {
 
 .radio-light,
 .checkbox-light {
-  -webkit-transition: box-shadow .2s ease;
-          transition: box-shadow .2s ease;
+  transition: box-shadow .2s ease;
 }
 
 .radio-light {
@@ -1273,12 +1304,26 @@ input[type=range] {
 
 .range-light::-webkit-slider-thumb {
   -webkit-appearance: none;
+  position: relative;
   width: .5rem;
   height: 1.25rem;
   border-radius: 3px;
   background-color: currentcolor;
   cursor: pointer;
   margin-top: -0.5rem;
+}
+
+/* Touch screen friendly pseudo element */
+
+.range-light::-webkit-slider-thumb:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -0.5rem;
+  left: -0.875rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  opacity: 0;
 }
 
 .range-light::-moz-range-thumb {
@@ -1318,8 +1363,28 @@ input[type=range] {
 .range-light:focus::-moz-range-thumb {
   outline: none;
   border: 0;
-  box-shadow: 0 0 1px 2px currentcolor;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, .25);
 }
+
+/* Basscss Defaults */
+
+/*
+
+   COLOR VARIABLES
+
+   - Cool
+   - Warm
+   - Gray Scale
+
+*/
+
+:root {
+  /* Cool */
+  /* Warm */
+  /* Gray scale */
+}
+
+
 
 
 
@@ -1332,12 +1397,9 @@ input[type=range] {
   background-color: transparent;
   border-radius: 3px;
   border: 1px solid currentcolor;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-property: box-shadow, background-color;
-          transition-property: box-shadow, background-color;
+  transition-duration: .1s;
+  transition-timing-function: ease-out;
+  transition-property: box-shadow, background-color;
 }
 
 .button-outline:before {
@@ -1352,12 +1414,9 @@ input[type=range] {
   border: 1px solid transparent;
   background-color: currentcolor;
   border-radius: 3px;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-property: opacity;
-          transition-property: opacity;
+  transition-duration: .1s;
+  transition-timing-function: ease-out;
+  transition-property: opacity;
   opacity: 0;
 }
 
@@ -1396,12 +1455,9 @@ input[type=range] {
   background-color: transparent;
   border-radius: 0;
   border: 1px solid transparent;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-property: box-shadow;
-          transition-property: box-shadow;
+  transition-duration: .1s;
+  transition-timing-function: ease-out;
+  transition-property: box-shadow;
 }
 
 .button-transparent:before {
@@ -1415,12 +1471,9 @@ input[type=range] {
   left: -1px;
   border: 1px solid transparent;
   background-color: currentcolor;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-property: opacity;
-          transition-property: opacity;
+  transition-duration: .1s;
+  transition-timing-function: ease-out;
+  transition-property: opacity;
   opacity: 0;
 }
 
@@ -1451,12 +1504,47 @@ input[type=range] {
 
 
 
+/* Basscss Button Link */
+
+.button-link {
+  padding-right: 0;
+  padding-left: 0;
+  color: inherit;
+  background-color: transparent;
+  background-size: 100% .25em;
+  background-repeat: repeat-x;
+  background-position: 0 1.5rem;
+  border-radius: 0;
+}
+
+.button-link:hover,
+.button-link:focus {
+  box-shadow: none;
+  background-image: linear-gradient(transparent 50%, currentcolor 50%);
+}
+
+.button-link:active,
+.button-link.is-active {
+  box-shadow: inset 0 -.125em;
+}
+
+.button-link:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, .25);
+}
+
+.button-link:disabled,
+.button-link.is-disabled {
+  opacity: .5;
+}
+
 /* Basscss Color Tables */
 
 .table-light th,
 .table-light td {
-  border-bottom-style: solid;
   border-bottom-width: 1px;
+  border-bottom-style: solid;
   border-bottom-color: inherit;
 }
 
@@ -1813,6 +1901,8 @@ input[type=range] {
 .muted {
   opacity: .5;
 }
+
+/* Basscss Defaults */
 
 /*
 

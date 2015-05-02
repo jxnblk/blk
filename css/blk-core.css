@@ -346,8 +346,6 @@ td {
   white-space: nowrap;
 }
 
-
-
 /* Basscss Utility White Space */
 
 .m0 {
@@ -698,12 +696,9 @@ hr {
   color: white;
   background-color: #0096ff;
   border-radius: 3px;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-property: box-shadow, background-color;
-          transition-property: box-shadow, background-color;
+  transition-duration: .1s;
+  transition-timing-function: ease-out;
+  transition-property: box-shadow, background-color;
 }
 
 .button-blue:hover {
@@ -731,12 +726,9 @@ hr {
   background-color: transparent;
   border-radius: 3px;
   border: 2px solid #0096ff;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-property: box-shadow, background-color;
-          transition-property: box-shadow, background-color;
+  transition-duration: .1s;
+  transition-timing-function: ease-out;
+  transition-property: box-shadow, background-color;
 }
 
 .button-blue-outline:hover,

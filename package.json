@@ -78,5 +78,8 @@
   "bugs": {
     "url": "https://github.com/jxnblk/blk/issues"
   },
-  "homepage": "https://github.com/jxnblk/blk"
+  "homepage": "https://github.com/jxnblk/blk",
+  "dependencies": {
+    "basscss-button-link": "^1.2.3"
+  }
 }
