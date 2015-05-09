@@ -1,104 +1,69 @@
 /* B L K */
 
-/* Basscss Modules */
-@import 'basscss-base-reset';
-@import 'basscss-base-forms';
-@import 'basscss-base-buttons';
-@import 'basscss-base-tables';
-@import 'basscss-base-typography';
-
-@import 'basscss-utility-layout';
-@import 'basscss-utility-typography';
-@import 'basscss-utility-white-space';
-@import 'basscss-utility-responsive-states';
-@import 'basscss-positions';
-@import 'basscss-utility-headings';
-@import 'basscss-ui-utility-button-sizes';
-
-@import 'basscss-grid';
-@import 'flex-object';
-
-@import 'basscss-color-base';
-@import 'basscss-color-forms';
-/* @import 'basscss-color-forms-dark'; */
-@import 'basscss-input-range';
-@import 'basscss-button-outline';
-@import 'basscss-button-transparent';
+@import 'basscss';
+/*
 @import 'basscss-button-link';
-@import 'basscss-color-tables';
-@import 'basscss-color-borders';
-@import 'basscss-background-images';
-@import 'basscss-colors';
-
-@import 'basscss-highlight';
-
-@import './base/typography';
-@import './base/svg';
-@import './utility/fonts';
-@import './utility/icons';
-@import './color/colors'; /* Alpha backgrounds */
-@import './color/border-thick';
-
+*/
 
 @import 'basscss-defaults';
 
 
-@custom-media --breakpoint-sm (min-width: 40em);
-@custom-media --breakpoint-md (min-width: 52em);
-@custom-media --breakpoint-lg (min-width: 64em);
+p {
+  font-weight: var(--bold-font-weight);
+}
 
+.georgia { font-family: Georgia, serif }
+
+.field-light {
+  color: inherit;
+}
+
+  .btn,
+  .btx {
+    text-decoration: none;
+  }
+  .btn:hover,
+  .btx:hover {
+    box-shadow: inset 0 0 0 10000px var(--darken-1);
+    text-decoration: none;
+  }
+  .btn:focus,
+  .btx:focus {
+    outline: none;
+    border-color: var(--darken-2);
+    box-shadow: 0 0 0 3px var(--darken-3);
+  }
+  .btn:active,
+  .btx:active,
+  .btx.is-active {
+    box-shadow: inset 0 0 0 20rem var(--darken-2),
+      inset 0 3px 4px 0 var(--darken-3),
+      0 0 1px var(--darken-2);
+  }
+  .btn:disabled,
+  .btx:disabled,
+  .btx.is-disabled {
+    opacity: .5;
+  }
+
+
+.button-link {
+  padding-left: 0;
+  padding-right: 0;
+  color: inherit;
+  background-color: transparent;
+}
+.button-link:hover {
+  text-decoration: underline;
+  box-shadow: none;
+}
 
 :root {
 
-  --font-family: 'Avenir Next', 'Helvetica Neue', Helvetica, sans-serif;
-  --line-height: 1.5;
-  --monospace-font-family: 'Source Code Pro', Consolas, monospace;
-
-  --h1: 2.5rem;
-  --h2: 1.75rem;
-  --h3: 1.5rem;
-  --h4: 1.125rem;
-  --h5: 1rem;
-  --h6: .875rem;
-  --heading-font-family: var(--font-family);
-  --heading-font-weight: 600;
-  --heading-line-height: 1.25;
-
-  --bold-font-weight: 600;
-
-  --space-1: .5rem;
-  --space-2: 1rem;
-  --space-3: 2rem;
-  --space-4: 4rem;
-
-  --button-font-size: .875rem;
-  --button-font-weight: 600;
-
-  --container-width: 72em;
-
-  /* --black: #263c46; */
-  --black: #16262c;
-
-    /* --bright-blue: #00afef; */
-  --bright-blue: #0f8fff; /* For use on dark background */
-  --red: #ff4916;
-  /*
-  --blue: #00afef;
-  --green: #00ef60;
-  --yellow: #ffdf00;
-  --dark-blue: #006faf;
-  --light-blue: rgba(var(--blue), .0625);
-  */
-
-  --darken-1: rgba(#000,.0625);
-  --darken-2: rgba(#000,.125);
-  --darken-3: rgba(#000,.25);
-  --darken-4: rgba(#000,.5);
-
-  /* --border-color: var(--darken-3); */
-  --border-color: inherit;
-  --border-width: 1px;
-  --border-radius: 3px;
+  --bold-font-weight: 500;
+  --heading-font-weight: 500;
+  --button-font-weight: 500;
+  --button-font-size: var(--h5);
 
 }
 
