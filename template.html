@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><%= name %></title>
+  <meta title="description" content="<%= description %>">
+  <meta title="author" content="<%= author %>">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style><%= styles %></style>
+</head>
+<body>
+
+  <div class="container px2">
+
+    <h1>Blk</h1>
+
+    <hr>
+
+    <%= include('typography', { color: 'black' }) %>
+
+    <div class="georgia">
+      <%= include('typography', { color: 'black' }) %>
+    </div>
+
+    <hr>
+
+    <h2>Colors</h2>
+    <div class="flex flex-wrap">
+      <% colors.map(function(color) { %>
+        <div class="flex-auto mb2">
+          <div class="p4 bg-<%= color %>"></div>
+          <div class="h5">
+            <%= color %>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+
+    <hr>
+
+    <h2>Buttons</h2>
+
+    <button class="button">Button</button>
+    <button class="button button-outline blue">Button</button>
+    <button class="button button-transparent blue">Button</button>
+    <button class="button button-link">Button</button>
+
+    <hr>
+
+  </div>
+
+</body>
+</html>
+
