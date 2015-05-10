@@ -686,7 +686,7 @@ h6, .h6 { font-size: 12px; font-size: .75rem }
 /* Basscss Color Base */
 
 body {
-  color: #222;
+  color: #111;
   background-color: white;
 }
 
@@ -700,7 +700,7 @@ a:hover {
 }
 
 pre, code {
-  background-color: #ddd;
+  background-color: transparent;
   border-radius: 3px;
 }
 
@@ -1180,7 +1180,7 @@ input[type=range] {
 .not-rounded { border-radius: 0 }
 /* Basscss Colors */
 
-.black, .dark-gray   { color: #222 }
+.black, .dark-gray   { color: #111 }
 .gray, .mid-gray     { color: #aaa }
 .silver, .light-gray { color: #ddd }
 .white { color: #fff }
@@ -1199,7 +1199,7 @@ input[type=range] {
 .fuchsia { color: #f012be }
 .purple  { color: #b10dc9 }
 .maroon  { color: #85144b }
-.bg-black, .bg-dark-gray   { background-color: #222 }
+.bg-black, .bg-dark-gray   { background-color: #111 }
 .bg-gray, .bg-mid-gray     { background-color: #aaa }
 .bg-silver, .bg-light-gray { background-color: #ddd }
 .bg-white  { background-color: #fff }
@@ -1223,7 +1223,7 @@ input[type=range] {
 .bg-darken-2 { background-color: #000000; background-color: rgba(0,0,0,.125) }
 .bg-darken-3 { background-color: #000000; background-color: rgba(0,0,0,.25) }
 .bg-darken-4 { background-color: #000000; background-color: rgba(0,0,0,.5) }
-.border-black  { border-color: #222 }
+.border-black  { border-color: #111 }
 .border-gray   { border-color: #aaa }
 .border-silver { border-color: #ddd }
 .border-white  { border-color: #fff }
@@ -1249,13 +1249,6 @@ input[type=range] {
 .border-darken-4 { border-color: #000000; border-color: rgba(0,0,0,.5) }
 .muted { opacity: .5 }
 .color-inherit { color: inherit }
-/* Basscss Defaults */
-
-:root {
-
-  /* Legacy support */
-
-}
 
 
 p {
