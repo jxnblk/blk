@@ -13,6 +13,7 @@
   <div class="container px2">
 
     <h1>Blk</h1>
+
     <hr>
 
     <%= include('typography', { color: 'black' }) %>
@@ -21,31 +22,30 @@
       <%= include('typography', { color: 'black' }) %>
     </div>
 
+    <hr>
+
+    <h2>Colors</h2>
+    <div class="flex flex-wrap">
+      <% colors.map(function(color) { %>
+        <div class="flex-auto mb2">
+          <div class="p4 bg-<%= color %>"></div>
+          <div class="h5">
+            <%= color %>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+
+    <hr>
+
+    <h2>Buttons</h2>
 
     <button class="button">Button</button>
-    <button class="button button-outline">Button</button>
     <button class="button button-outline blue">Button</button>
-    <button class="button button-transparent">Button</button>
     <button class="button button-transparent blue">Button</button>
-    <button class="button button-transparent fuchsia">Button</button>
     <button class="button button-link">Button</button>
 
     <hr>
-
-    <button class="h1 button button-link">Button</button>
-    <button class="h2 button button-link">Button</button>
-    <button class="h3 button button-link">Button</button>
-    <button class="h4 button button-link">Button</button>
-    <button class="h5 button button-link">Button</button>
-    <button class="h6 button button-link">Button</button>
-
-    <hr>
-    <button class="btx">btx</button>
-    <a href="#" class="button btx">btx</a>
-    <a href="#" class="btx">btx</a>
-    <button class="btx white bg-blue">btx</button>
-    <a href="#" class="button btx white bg-blue">btx</a>
-    <a href="#" class="h3 bold block p2 rounded btx blue">btx</a>
 
   </div>
 

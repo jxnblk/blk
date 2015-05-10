@@ -10,7 +10,9 @@ var css = fs.readFileSync('css/blk.min.css', 'utf8');
 
 var tpl = _.template(fs.readFileSync('template.html', 'utf8'));
 
-data.colors = Object.keys(colorsCss);
+data.colors = Object.keys(colorsCss).filter(function(color) {
+  return color !== 'white';
+});
 data.styles = css;
 data.stats = cssstats(css);
 data.filesize = filesize;
