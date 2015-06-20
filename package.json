@@ -6,25 +6,24 @@
   "license": "MIT",
   "style": "css/blk.css",
   "scripts": {
-    "css": "cssnext src/blk.css css/blk.css",
-    "css:min": "cssnext src/blk.css css/blk.min.css -c",
-    "css:watch": "cssnext src/blk.css css/blk.css -w",
-    "css:min:watch": "cssnext src/blk.css css/blk.min.css -c -w",
-    "build": "node build",
-    "build:watch": "onchange 'template.html' 'css/blk.min.css' -- npm run build",
-    "serve": "http-server",
-    "start": "npm run css:watch & npm run css:min:watch & npm run build:watch & npm run serve"
+    "dev": "webpack-dev-server --progress --colors",
+    "start": "npm run dev"
   },
   "devDependencies": {
-    "basscss": "^6.1.4",
-    "basscss-defaults": "^2.0.1",
-    "colors.css": "^2.3.0",
+    "babel": "^5.5.8",
+    "babel-core": "^5.5.8",
+    "babel-loader": "^5.1.4",
+    "css-loader": "^0.15.1",
     "cssnext": "^1.4.0",
+    "cssnext-loader": "^1.0.1",
     "cssstats": "latest",
     "filesize": "^3.1.2",
-    "http-server": "^0.8.0",
-    "lodash": "^2.4.1",
-    "onchange": "^1.1.0"
+    "lodash": "^3.9.3",
+    "react": "^0.13.3",
+    "static-site-generator-webpack-plugin": "^1.0.0",
+    "style-loader": "^0.12.3",
+    "webpack": "^1.9.11",
+    "webpack-dev-server": "^1.9.0"
   },
   "repository": {
     "type": "git",
@@ -39,5 +38,24 @@
   "bugs": {
     "url": "https://github.com/jxnblk/blk/issues"
   },
-  "homepage": "https://github.com/jxnblk/blk"
+  "homepage": "https://github.com/jxnblk/blk",
+  "dependencies": {
+    "basscss-background-colors": "^1.0.0-beta.1",
+    "basscss-base-reset": "^2.0.1",
+    "basscss-base-typography": "^2.0.0-beta.0",
+    "basscss-borders": "^1.0.2",
+    "basscss-btn": "^1.0.0-beta.0",
+    "basscss-color-base": "^2.0.0-beta.0",
+    "basscss-colors": "^2.0.0-beta.1",
+    "basscss-defaults": "^2.0.1",
+    "basscss-grid": "^1.0.2",
+    "basscss-type-scale": "^1.0.0",
+    "basscss-utility-layout": "^2.0.0-beta.1",
+    "basscss-utility-typography": "^2.0.0-beta.0",
+    "basscss-white-space": "^1.0.1",
+    "color": "^0.8.0",
+    "colors.css": "^2.3.0",
+    "flex-object": "^1.1.3",
+    "jxnblk-avatar": "git://github.com/jxnblk/avatar.git"
+  }
 }
