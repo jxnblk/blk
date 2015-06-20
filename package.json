@@ -10,6 +10,7 @@
     "babel": "babel src/components --out-dir components",
     "babel:watch": "babel src/components -w --out-dir components",
     "dev": "webpack-dev-server --progress --colors",
+    "docs": "webpack -p --progress --colors",
     "start": "npm run babel:watch & npm run dev"
   },
   "devDependencies": {
