@@ -1,6 +1,6 @@
 
-
 import React from 'react'
+import Avatar from 'jxnblk-avatar'
 
 class Footer extends React.Component {
 
@@ -22,12 +22,14 @@ class Footer extends React.Component {
   render () {
     return (
       <footer className='mt3 py3 border-top'>
-        <div className='flex flex-baseline flex-wrap mxn1'>
+        <div className='sm-flex flex-baseline flex-wrap mxn1'>
           <a href={this.props.href}
             className='h3 btn btn-narrow btn-link'>
             {this.props.title}
           </a>
-          {this.props.links.map(this.renderLink)}
+          <div className='flex flex-baseline'>
+            {this.props.links.map(this.renderLink)}
+          </div>
           <div className='flex-auto' />
           <a href='//jxnblk.com' className='btn btn-narrow btn-link'>
             Made by Jxnblk

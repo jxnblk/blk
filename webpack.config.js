@@ -1,10 +1,10 @@
 
 var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin')
-var data = require('./data')
+var data = require('./docs/data')
 
 module.exports = {
 
-  entry: './entry.js',
+  entry: './docs/entry.js',
 
   output: {
     filename: 'bundle.js',

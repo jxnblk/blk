@@ -1,12 +1,13 @@
 
 import React from 'react'
-import blk from '../src/blk.css'
+import blk from '../src/css/blk.css'
 
-import Header from './Header.jsx'
-import Footer from './Footer.jsx'
 import Typography from './Typography.jsx'
 import Buttons from './Buttons.jsx'
 import Colors from './Colors.jsx'
+import Components from './Components.jsx'
+
+import { Header, Footer } from '..'
 
 class Root extends React.Component {
 
@@ -32,6 +33,8 @@ class Root extends React.Component {
           <Typography />
           <Buttons />
           <Colors {...this.props} />
+          <Components {...this.props}
+            links={links} />
           <Footer {...this.props}
             links={links} />
         </body>

@@ -4,10 +4,13 @@
   "description": "A style guide",
   "author": "Brent Jackson",
   "license": "MIT",
-  "style": "css/blk.css",
+  "main": "index.js",
+  "style": "src/css/blk.css",
   "scripts": {
+    "babel": "babel src/components --out-dir components",
+    "babel:watch": "babel src/components -w --out-dir components",
     "dev": "webpack-dev-server --progress --colors",
-    "start": "npm run dev"
+    "start": "npm run babel:watch & npm run dev"
   },
   "devDependencies": {
     "babel": "^5.5.8",

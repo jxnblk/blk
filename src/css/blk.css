@@ -28,6 +28,11 @@ h4 a:hover, h5 a:hover, h6 a:hover {
   text-decoration: underline;
 }
 
+pre {
+  padding: 0 1.5rem;
+  border-left: 4px solid var(--darken-1);
+}
+
 .caps { letter-spacing: 0.1em }
 
 .serif { font-family: var(--serif) }
@@ -88,7 +93,7 @@ h4 a:hover, h5 a:hover, h6 a:hover {
   --heading-font-weight: var(--bold-font-weight);
   */
   --button-font-size: var(--h5);
-  --pre-font-size: 75%;
+  --pre-font-size: 87.5%;
 
   --body-color: var(--slate);
   --light-blue: color(var(--aqua) a(.0625));

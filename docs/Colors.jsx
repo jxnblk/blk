@@ -6,14 +6,13 @@ import Chip from './Chip.jsx'
 class Colors extends React.Component {
 
   render () {
-    console.log('PROPS', this.props)
     let colors = this.props.colors
     return (
       <Section title='Colors'>
         <div className='flex flex-wrap mxn2'>
-          {this.props.colorNames.map(function(color) {
+          {this.props.colorNames.map(function(color, i) {
             return (
-              <div className='px2'>
+              <div className='px2' key={i}>
                 <Chip color={color} />
               </div>
             )

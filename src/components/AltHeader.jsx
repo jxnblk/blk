@@ -1,8 +1,7 @@
 
 import React from 'react'
-import Avatar from 'jxnblk-avatar'
 
-class Header extends React.Component {
+class AltHeader extends React.Component {
 
   constructor () {
     super ()
@@ -22,21 +21,20 @@ class Header extends React.Component {
   render () {
     return (
       <header className='py3'>
-        <div className='mxn1'>
-          <div className='flex flex-center'>
-            <a href='http://jxnblk.com'
-              className='h5 bold caps compact flex flex-center px1 black'>
-              Jxnblk
-            </a>
-          </div>
-          <h1 className='m0'>
-            <a href={this.props.href}
-              className='inline-block px1'>
-              {this.props.title}
-            </a>
-          </h1>
-        </div>
-        <p className=''>{this.props.description}</p>
+        <h2 className='h4 m0 mxn1'>
+          <a href='http://jxnblk.com'
+            className='inline-block px1 black'>
+            Jxnblk
+          </a>
+          {'/'}
+          <a href={this.props.href}
+            className='inline-block px1'>
+            {this.props.title}
+          </a>
+        </h2>
+        <h1 className='m0'>
+          {this.props.pageTitle}
+        </h1>
         <div className='mxn1'>
           {this.props.links.map(this.renderLink)}
         </div>
@@ -46,14 +44,19 @@ class Header extends React.Component {
 
 }
 
-Header.propTypes = {
+AltHeader.propTypes = {
   title: React.PropTypes.string,
+  pageTitle: React.PropTypes.string,
   href: React.PropTypes.string,
-  description: React.PropTypes.string,
   links: React.PropTypes.arrayOf(React.PropTypes.shape({
     text: React.PropTypes.string,
     href: React.PropTypes.string,
   })),
 }
 
-export default Header
+AltHeader.defaultProps = {
+  links: []
+}
+
+export default AltHeader
+

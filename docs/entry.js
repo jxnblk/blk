@@ -1,6 +1,6 @@
 
 var React = require('react')
-var Root = require('./components/Root.jsx')
+var Root = require('./Root.jsx')
 
 module.exports = function render (locals, callback) {
   var html = React.renderToStaticMarkup(React.createElement(Root, locals))
