@@ -1,0 +1,110 @@
+/* B L K */
+
+@import 'basscss-base-reset';
+@import 'basscss-base-typography';
+@import 'basscss-color-base';
+
+@import 'basscss-btn';
+@import 'basscss-type-scale';
+@import 'basscss-utility-typography';
+@import 'basscss-utility-layout';
+@import 'basscss-white-space';
+@import 'basscss-grid';
+@import 'flex-object';
+@import 'basscss-borders';
+@import 'basscss-colors';
+@import 'basscss-background-colors';
+
+@import 'basscss-defaults';
+
+h1 a, h2 a, h3 a,
+h4 a, h5 a, h6 a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover,
+h4 a:hover, h5 a:hover, h6 a:hover {
+  text-decoration: underline;
+}
+
+pre {
+  padding: 0 1.5rem;
+  border-left: 4px solid var(--darken-1);
+}
+
+.caps { letter-spacing: 0.1em }
+
+.serif { font-family: var(--serif) }
+.compact { font-family: 'SF Compact Text', Roboto, 'Helvetica Neue', Helvetica, sans-serif }
+
+.btn:hover {
+  box-shadow: inset 0 99999px var(--light-blue);
+  /*
+  border-color: var(--light-blue);
+  */
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+  box-shadow: none;
+}
+
+.btn-narrow {
+  padding-left: var(--space-1);
+  padding-right: var(--space-1);
+}
+
+.prose {
+  font-family: var(--serif);
+  font-size: var(--h4);
+}
+
+.prose p,
+.prose ul,
+.prose ol,
+.prose dl {
+  font-size: inherit;
+}
+
+.prose p:first-child { font-size: var(--h3) }
+
+.prose img {
+  height: auto;
+}
+
+@media (--breakpoint-sm) {
+  .serif, .prose { font-size: var(--h3) }
+  .prose p:first-child { font-size: var(--h2) }
+}
+
+.slate { color: var(--slate) }
+.brightblue { color: var(--brightblue) }
+
+.bg-slate { background-color: var(--slate) }
+.bg-brightblue { background-color: var(--brightblue) }
+
+:root {
+  --font-family: 'SF UI Text', Roboto, 'Helvetica Neue', Helvetica, sans-serif;
+  --heading-font-family: 'SF UI Display', Roboto, 'Helvetica Neue', Helvetica, sans-serif;
+  --serif: Georgia, serif;
+  --bold-font-weight: 500;
+  /*
+  --heading-font-weight: var(--bold-font-weight);
+  */
+  --button-font-size: var(--h5);
+  --pre-font-size: 87.5%;
+
+  --body-color: var(--slate);
+  --light-blue: color(var(--aqua) a(.0625));
+
+  --blue: #007bbd;
+  --red: #ff6200;
+  --green: #00a865;
+  --slate: #101e23;
+  --slate: #172C36;
+  --brightblue: #33b8ff;
+
+}
+
+
