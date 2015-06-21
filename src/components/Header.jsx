@@ -20,6 +20,18 @@ class Header extends React.Component {
   }
 
   render () {
+    let breadcrumb = false
+    if (this.props.breadcrumb) {
+      breadcrumb = (
+        <span>
+          {'/'}
+          <a href={this.props.breadcrumb.href}
+            className='h5 bold caps compact px1 black'>
+            {this.props.breadcrumb.text}
+          </a>
+        </span>
+      )
+    }
     return (
       <header className='py3 sm-flex flex-wrap flex-center'>
         <div className='flex-auto mxn1'>
@@ -28,6 +40,7 @@ class Header extends React.Component {
               className='h5 bold caps compact px1 black'>
               Jxnblk
             </a>
+            {breadcrumb}
           </div>
           <h1 className='m0'>
             <a href={this.props.href}
@@ -40,7 +53,6 @@ class Header extends React.Component {
         <div className='mxn1'>
           {this.props.links.map(this.renderLink)}
         </div>
-        {this.props.children}
       </header>
     )
   }
@@ -55,6 +67,10 @@ Header.propTypes = {
     text: React.PropTypes.string,
     href: React.PropTypes.string,
   })),
+  breadcrumb: React.PropTypes.shape({
+    text: React.PropTypes.string,
+    href: React.PropTypes.string,
+  })
 }
 
 Header.defaultProps = {

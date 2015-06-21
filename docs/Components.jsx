@@ -29,6 +29,13 @@ class Components extends React.Component {
           <pre>{`<Header title='Header'\n  href='#components'\n  description='Header description'\n  links={links} />`}</pre>
         </Box>
         <Box>
+          <Header title='Sub Page'
+            href='#components'
+            breadcrumb={{ href: '', text: 'Writing' }}
+            description={false}
+            links={this.props.links} />
+        </Box>
+        <Box>
           <MinimalHeader title='MinimalHeader'
             href='#components' />
           <pre>{`<MinimalHeader title='MinimalHeader'\n  href='#components' />`}</pre>

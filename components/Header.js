@@ -46,6 +46,20 @@ var Header = (function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
+      var breadcrumb = false;
+      if (this.props.breadcrumb) {
+        breadcrumb = _react2['default'].createElement(
+          'span',
+          null,
+          '/',
+          _react2['default'].createElement(
+            'a',
+            { href: this.props.breadcrumb.href,
+              className: 'h5 bold caps compact px1 black' },
+            this.props.breadcrumb.text
+          )
+        );
+      }
       return _react2['default'].createElement(
         'header',
         { className: 'py3 sm-flex flex-wrap flex-center' },
@@ -60,7 +74,8 @@ var Header = (function (_React$Component) {
               { href: 'http://jxnblk.com',
                 className: 'h5 bold caps compact px1 black' },
               'Jxnblk'
-            )
+            ),
+            breadcrumb
           ),
           _react2['default'].createElement(
             'h1',
@@ -82,8 +97,7 @@ var Header = (function (_React$Component) {
           'div',
           { className: 'mxn1' },
           this.props.links.map(this.renderLink)
-        ),
-        this.props.children
+        )
       );
     }
   }]);
@@ -98,7 +112,11 @@ Header.propTypes = {
   links: _react2['default'].PropTypes.arrayOf(_react2['default'].PropTypes.shape({
     text: _react2['default'].PropTypes.string,
     href: _react2['default'].PropTypes.string
-  }))
+  })),
+  breadcrumb: _react2['default'].PropTypes.shape({
+    text: _react2['default'].PropTypes.string,
+    href: _react2['default'].PropTypes.string
+  })
 };
 
 Header.defaultProps = {
