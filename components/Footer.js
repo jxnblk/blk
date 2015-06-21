@@ -60,7 +60,7 @@ var Footer = (function (_React$Component) {
           ),
           _react2['default'].createElement(
             'div',
-            { className: 'flex flex-baseline' },
+            { className: 'sm-flex flex-baseline' },
             this.props.links.map(this.renderLink)
           ),
           _react2['default'].createElement('div', { className: 'flex-auto' }),

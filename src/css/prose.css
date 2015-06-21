@@ -1,0 +1,29 @@
+
+.prose {
+  font-family: var(--serif);
+  font-size: var(--h4);
+}
+
+.prose p,
+.prose ul,
+.prose ol,
+.prose dl {
+  font-size: inherit;
+}
+
+.prose p:first-child { font-size: var(--h3) }
+
+.prose img {
+  height: auto;
+}
+
+.prose figcaption {
+  font-family: var(--font-family);
+  font-size: var(--h5);
+}
+
+@media (--breakpoint-sm) {
+  .serif, .prose { font-size: var(--h3) }
+  .prose p:first-child { font-size: var(--h2) }
+}
+

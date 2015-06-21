@@ -40,6 +40,7 @@ class Header extends React.Component {
         <div className='mxn1'>
           {this.props.links.map(this.renderLink)}
         </div>
+        {this.props.children}
       </header>
     )
   }

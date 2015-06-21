@@ -82,7 +82,8 @@ var Header = (function (_React$Component) {
           'div',
           { className: 'mxn1' },
           this.props.links.map(this.renderLink)
-        )
+        ),
+        this.props.children
       );
     }
   }]);

@@ -17,6 +17,8 @@
 
 @import 'basscss-defaults';
 
+@import './prose';
+
 h1 a, h2 a, h3 a,
 h4 a, h5 a, h6 a {
   color: var(--black);
@@ -35,14 +37,17 @@ pre {
 
 .caps { letter-spacing: 0.1em }
 
+.sans { font-family: var(--font-family) }
 .serif { font-family: var(--serif) }
-.compact { font-family: 'SF Compact Text', Roboto, 'Helvetica Neue', Helvetica, sans-serif }
+.compact { font-family: var(--small-font-family) }
+
+.icon {
+  position: relative;
+  top: 0.125em;
+}
 
 .btn:hover {
   box-shadow: inset 0 99999px var(--light-blue);
-  /*
-  border-color: var(--light-blue);
-  */
 }
 
 .btn-link:hover {
@@ -55,28 +60,6 @@ pre {
   padding-right: var(--space-1);
 }
 
-.prose {
-  font-family: var(--serif);
-  font-size: var(--h4);
-}
-
-.prose p,
-.prose ul,
-.prose ol,
-.prose dl {
-  font-size: inherit;
-}
-
-.prose p:first-child { font-size: var(--h3) }
-
-.prose img {
-  height: auto;
-}
-
-@media (--breakpoint-sm) {
-  .serif, .prose { font-size: var(--h3) }
-  .prose p:first-child { font-size: var(--h2) }
-}
 
 .slate { color: var(--slate) }
 .brightblue { color: var(--brightblue) }
@@ -87,11 +70,9 @@ pre {
 :root {
   --font-family: 'SF UI Text', Roboto, 'Helvetica Neue', Helvetica, sans-serif;
   --heading-font-family: 'SF UI Display', Roboto, 'Helvetica Neue', Helvetica, sans-serif;
+  --small-font-family: 'SF Compact Text', Roboto, 'Helvetica Neue', Helvetica, sans-serif;
   --serif: Georgia, serif;
   --bold-font-weight: 500;
-  /*
-  --heading-font-weight: var(--bold-font-weight);
-  */
   --button-font-size: var(--h5);
   --pre-font-size: 87.5%;
 

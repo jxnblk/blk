@@ -27,7 +27,7 @@ class Footer extends React.Component {
             className='h3 btn btn-narrow btn-link'>
             {this.props.title}
           </a>
-          <div className='flex flex-baseline'>
+          <div className='sm-flex flex-baseline'>
             {this.props.links.map(this.renderLink)}
           </div>
           <div className='flex-auto' />
