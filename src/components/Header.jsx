@@ -1,6 +1,7 @@
 
 import React from 'react'
 import Avatar from 'jxnblk-avatar'
+import Breadcrumb from './Breadcrumb'
 
 class Header extends React.Component {
 
@@ -20,18 +21,21 @@ class Header extends React.Component {
   }
 
   render () {
-    let breadcrumb = false
-    if (this.props.breadcrumb) {
-      breadcrumb = (
-        <span>
-          {'/'}
-          <a href={this.props.breadcrumb.href}
-            className='h5 bold caps compact px1 black'>
-            {this.props.breadcrumb.text}
+    let title = false
+    let description = this.props.description ? (<p className='h3 m0 px1'>{this.props.description}</p>) : false
+    if (typeof this.props.title === 'string') {
+      title = (
+        <h1 className='m0'>
+          <a href={this.props.href}
+            className='inline-block px1'>
+            {this.props.title}
           </a>
-        </span>
+        </h1>
       )
+    } else {
+      title = <div className='px1'>{this.props.title}</div>
     }
+
     return (
       <header className='py3 sm-flex flex-wrap flex-center'>
         <div className='flex-auto mxn1'>
@@ -40,15 +44,12 @@ class Header extends React.Component {
               className='h5 bold caps compact px1 black'>
               Jxnblk
             </a>
-            {breadcrumb}
+            {this.props.breadcrumbs.map(function(breadcrumb, i) {
+              return <Breadcrumb key={i} {...breadcrumb} />
+            })}
           </div>
-          <h1 className='m0'>
-            <a href={this.props.href}
-              className='inline-block px1'>
-              {this.props.title}
-            </a>
-          </h1>
-          <p className='h3 m0 px1'>{this.props.description}</p>
+          {title}
+          {description}
         </div>
         <div className='mxn1'>
           {this.props.links.map(this.renderLink)}
@@ -60,21 +61,25 @@ class Header extends React.Component {
 }
 
 Header.propTypes = {
-  title: React.PropTypes.string,
+  title: React.PropTypes.oneOfType([
+    React.PropTypes.string,
+    React.PropTypes.element
+  ]),
   href: React.PropTypes.string,
   description: React.PropTypes.string,
   links: React.PropTypes.arrayOf(React.PropTypes.shape({
     text: React.PropTypes.string,
     href: React.PropTypes.string,
   })),
-  breadcrumb: React.PropTypes.shape({
+  breadcrumbs: React.PropTypes.arrayOf(React.PropTypes.shape({
     text: React.PropTypes.string,
     href: React.PropTypes.string,
-  })
+  }))
 }
 
 Header.defaultProps = {
-  links: []
+  links: [],
+  breadcrumbs: []
 }
 
 export default Header
