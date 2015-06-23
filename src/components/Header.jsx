@@ -41,7 +41,7 @@ class Header extends React.Component {
         <div className='flex-auto mxn1'>
           <div className=''>
             <a href='http://jxnblk.com'
-              className='h5 bold caps compact px1 black'>
+              className='h5 bold caps compact px1 color-inherit'>
               Jxnblk
             </a>
             {this.props.breadcrumbs.map(function(breadcrumb, i) {

@@ -89,7 +89,7 @@ var Header = (function (_React$Component) {
             _react2['default'].createElement(
               'a',
               { href: 'http://jxnblk.com',
-                className: 'h5 bold caps compact px1 black' },
+                className: 'h5 bold caps compact px1 color-inherit' },
               'Jxnblk'
             ),
             this.props.breadcrumbs.map(function (breadcrumb, i) {

@@ -8,7 +8,7 @@ class Breadcrumb extends React.Component {
       <span>
         {'/'}
         <a href={this.props.href}
-          className='h5 bold caps compact px1 black'>
+          className='h5 bold caps compact px1 color-inherit'>
           {this.props.text}
         </a>
       </span>

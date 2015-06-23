@@ -39,14 +39,14 @@ var MinimalHeader = (function (_React$Component) {
           _react2['default'].createElement(
             'a',
             { href: 'http://jxnblk.com',
-              className: 'inline-block px1 black' },
+              className: 'h5 bold caps compact inline-block px1 color-inherit' },
             'Jxnblk'
           ),
           '/',
           _react2['default'].createElement(
             'a',
             { href: this.props.href,
-              className: 'inline-block px1' },
+              className: 'h5 bold caps compact inline-block px1' },
             this.props.title
           )
         )

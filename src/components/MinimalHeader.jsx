@@ -12,12 +12,12 @@ class MinimalHeader extends React.Component {
       <header className='py2'>
         <h2 className='h4 m0 mxn1'>
           <a href='http://jxnblk.com'
-            className='inline-block px1 black'>
+            className='h5 bold caps compact inline-block px1 color-inherit'>
             Jxnblk
           </a>
           {'/'}
           <a href={this.props.href}
-            className='inline-block px1'>
+            className='h5 bold caps compact inline-block px1'>
             {this.props.title}
           </a>
         </h2>

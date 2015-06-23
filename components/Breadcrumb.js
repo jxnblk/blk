@@ -37,7 +37,7 @@ var Breadcrumb = (function (_React$Component) {
         _react2['default'].createElement(
           'a',
           { href: this.props.href,
-            className: 'h5 bold caps compact px1 black' },
+            className: 'h5 bold caps compact px1 color-inherit' },
           this.props.text
         )
       );
