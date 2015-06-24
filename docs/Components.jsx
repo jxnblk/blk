@@ -8,7 +8,9 @@ import {
   Footer,
   AltHeader,
   MinimalHeader,
-  CarbonAd
+  CarbonAd,
+  TweetButton,
+  GithubButton
 } from '..'
 
 
@@ -38,6 +40,18 @@ class Components extends React.Component {
           <MinimalHeader title='MinimalHeader'
             href='#components' />
           <pre>{`<MinimalHeader title='MinimalHeader'\n  href='#components' />`}</pre>
+        </Box>
+        <Box>
+          <div className='mb2'>
+            <TweetButton text='Blk: a style guide for jxnblk.com' />
+          </div>
+          <pre>{`<TweetButton text='Blk: a style guide for jxnblk.com' />`}</pre>
+        </Box>
+        <Box>
+          <div className='mb2'>
+            <GithubButton user='jxnblk' repo='blk' />
+          </div>
+          <pre>{`<GithubButton user='jxnblk' repo='blk' />`}</pre>
         </Box>
         <Box>
           <div className='mb2'>

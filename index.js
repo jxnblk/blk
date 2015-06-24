@@ -5,5 +5,7 @@ module.exports = {
   CarbonAd: require('./components/CarbonAd'),
   MinimalHeader: require('./components/MinimalHeader'),
   AltHeader: require('./components/AltHeader'),
+  TweetButton: require('./components/TweetButton'),
+  GithubButton: require('./components/GithubButton'),
 }
 

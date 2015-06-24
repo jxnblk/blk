@@ -18,7 +18,14 @@ npm i blk
 ## React Components
 
 ```js
-import { Header, Footer, CarbonAd } from 'blk'
+import {
+  Header,
+  MinimalHeader,
+  Footer,
+  CarbonAd,
+  TweetButton,
+  GithubButton
+} from 'blk'
 ```
 
 MIT License
