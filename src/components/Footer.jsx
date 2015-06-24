@@ -50,5 +50,9 @@ Footer.propTypes = {
   })),
 }
 
+Footer.defaultProps = {
+  links: []
+}
+
 export default Footer
 

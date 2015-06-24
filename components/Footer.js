@@ -86,5 +86,9 @@ Footer.propTypes = {
   }))
 };
 
+Footer.defaultProps = {
+  links: []
+};
+
 exports['default'] = Footer;
 module.exports = exports['default'];
