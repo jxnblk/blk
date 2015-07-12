@@ -34,16 +34,17 @@
     "url": "https://github.com/jxnblk/blk.git"
   },
   "keywords": [
+    "Basscss",
     "CSS",
-    "Style guide",
     "OOCSS",
-    "Basscss"
+    "Style guide"
   ],
   "bugs": {
     "url": "https://github.com/jxnblk/blk/issues"
   },
   "homepage": "https://github.com/jxnblk/blk",
   "dependencies": {
+    "basscss": "^7.0.0",
     "basscss-background-colors": "^1.0.0-beta.1",
     "basscss-base-reset": "^2.0.1",
     "basscss-base-typography": "^2.0.0-beta.0",

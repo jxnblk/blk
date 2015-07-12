@@ -31,6 +31,7 @@ var TweetButton = (function (_React$Component) {
     key: 'render',
     value: function render() {
       var text = this.props.text;
+      var url = this.props.url || null;
       var script = {
         __html: '!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?"http":"https";if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document, "script", "twitter-wjs");'
       };
@@ -43,6 +44,7 @@ var TweetButton = (function (_React$Component) {
           { href: 'https://twitter.com/share',
             className: 'twitter-share-button',
             'data-text': text,
+            'data-url': url,
             'data-via': 'jxnblk',
             'data-size': 'large' },
           'Tweet'
