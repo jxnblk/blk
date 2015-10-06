@@ -4,7 +4,10 @@ import React from 'react'
 class CarbonAd extends React.Component {
 
   render () {
-    let css = `
+
+    const { placement } = this.props
+
+    const css = `
       #carbonads {
         display: inline-block;
         font-size: 14px;
@@ -46,11 +49,19 @@ class CarbonAd extends React.Component {
     return (
       <div>
         <style dangerouslySetInnerHTML={{ __html: css }} />
-        <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1696&serve=CVYD42T&placement=jxnblkcom" id="_carbonads_js" />
+        <script
+          async
+          type='text/javascript'
+          src={`//cdn.carbonads.com/carbon.js?zoneid=1696&serve=CVYD42T&placement=${placement}`}
+          id='_carbonads_js' />
       </div>
     )
   }
 
+}
+
+CarbonAd.defaultProps = {
+  placement: 'jxnblkcom'
 }
 
 export default CarbonAd
